@@ -1,0 +1,601 @@
+[
+  {
+    "id": "baseId000-mITr7",
+    "friendly_name": "baseName000-Az3gH",
+    "status": "online",
+    "firmware_status": "up_to_date",
+    "updates_available": false,
+    "version": "bas-002.009.002",
+    "latest_version": "bas-002.009.001",
+    "fw_outdated": false,
+    "intrusion_settings": {
+      "active_mode": "home",
+      "requestedMode": "home",
+      "modeTransitionInProgress": false,
+      "modes": [
+        {
+          "custom": {
+            "sirens_on": false,
+            "trigger_delay": 0,
+            "privacy_mode": false,
+            "settings": [
+              {
+                "behaviors": {
+                  "open": "ignore",
+                  "prealert": "ignore",
+                  "tilt": "ignore",
+                  "drilling": "ignore",
+                  "forcedentry": "ignore"
+                }
+              },
+              {
+                "endnode_id": "elementId005-rgEHZ",
+                "behaviors": {
+                  "open": "ignore",
+                  "prealert": "ignore",
+                  "tilt": "ignore",
+                  "drilling": "ignore",
+                  "forcedentry": "ignore"
+                }
+              },
+              {
+                "behaviors": {
+                  "open": "ignore",
+                  "prealert": "ignore",
+                  "tilt": "ignore",
+                  "drilling": "ignore",
+                  "forcedentry": "ignore"
+                }
+              },
+              {
+                "endnode_id": "elementId006-WWbbP",
+                "behaviors": {
+                  "open": "ignore",
+                  "prealert": "ignore",
+                  "tilt": "ignore",
+                  "drilling": "ignore",
+                  "forcedentry": "ignore"
+                }
+              },
+              {
+                "endnode_id": "elementId002-4ZQka",
+                "behaviors": {
+                  "open": "ignore",
+                  "prealert": "ignore",
+                  "tilt": "ignore",
+                  "drilling": "ignore",
+                  "forcedentry": "ignore"
+                }
+              },
+              {
+                "endnode_id": "elementId003-3GIqp",
+                "behaviors": {
+                  "open": "ignore",
+                  "prealert": "ignore",
+                  "tilt": "ignore",
+                  "drilling": "ignore",
+                  "forcedentry": "ignore"
+                }
+              },
+              {
+                "endnode_id": "elementId000-7nYHO",
+                "behaviors": {
+                  "open": "ignore",
+                  "prealert": "ignore",
+                  "tilt": "ignore",
+                  "drilling": "ignore",
+                  "forcedentry": "ignore"
+                }
+              },
+              {
+                "behaviors": {
+                  "open": "ignore",
+                  "prealert": "ignore",
+                  "tilt": "ignore",
+                  "drilling": "ignore",
+                  "forcedentry": "ignore"
+                }
+              },
+              {
+                "behaviors": {
+                  "open": "ignore",
+                  "prealert": "ignore",
+                  "tilt": "ignore",
+                  "drilling": "ignore",
+                  "forcedentry": "ignore"
+                }
+              },
+              {
+                "behaviors": {
+                  "open": "ignore",
+                  "prealert": "ignore",
+                  "tilt": "ignore",
+                  "drilling": "ignore",
+                  "forcedentry": "ignore"
+                }
+              },
+              {
+                "behaviors": {
+                  "open": "ignore",
+                  "prealert": "ignore",
+                  "tilt": "ignore",
+                  "drilling": "ignore",
+                  "forcedentry": "ignore"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "night": {
+            "sirens_on": false,
+            "trigger_delay": 0,
+            "privacy_mode": false,
+            "settings": [
+              {
+                "behaviors": {
+                  "open": "alarm_notify",
+                  "prealert": "alarm_notify",
+                  "tilt": "alarm_notify",
+                  "drilling": "alarm_notify",
+                  "forcedentry": "alarm_notify"
+                }
+              },
+              {
+                "endnode_id": "elementId005-rgEHZ",
+                "behaviors": {
+                  "open": "alarm_notify",
+                  "prealert": "alarm_notify",
+                  "tilt": "alarm_notify",
+                  "drilling": "alarm_notify",
+                  "forcedentry": "alarm_notify"
+                }
+              },
+              {
+                "behaviors": {
+                  "open": "alarm_notify",
+                  "prealert": "alarm_notify",
+                  "tilt": "alarm_notify",
+                  "drilling": "alarm_notify",
+                  "forcedentry": "alarm_notify"
+                }
+              },
+              {
+                "endnode_id": "elementId006-WWbbP",
+                "behaviors": {
+                  "open": "alarm_notify",
+                  "prealert": "alarm_notify",
+                  "tilt": "alarm_notify",
+                  "drilling": "alarm_notify",
+                  "forcedentry": "alarm_notify"
+                }
+              },
+              {
+                "endnode_id": "elementId002-4ZQka",
+                "behaviors": {
+                  "open": "alarm_notify",
+                  "prealert": "alarm_notify",
+                  "tilt": "alarm_notify",
+                  "drilling": "alarm_notify",
+                  "forcedentry": "alarm_notify"
+                }
+              },
+              {
+                "behaviors": {
+                  "open": "alarm_notify",
+                  "prealert": "alarm_notify",
+                  "tilt": "alarm_notify",
+                  "drilling": "alarm_notify",
+                  "forcedentry": "alarm_notify"
+                }
+              },
+              {
+                "endnode_id": "elementId003-3GIqp",
+                "behaviors": {
+                  "open": "alarm_notify",
+                  "prealert": "alarm_notify",
+                  "tilt": "alarm_notify",
+                  "drilling": "alarm_notify",
+                  "forcedentry": "alarm_notify"
+                }
+              },
+              {
+                "endnode_id": "elementId000-7nYHO",
+                "behaviors": {
+                  "open": "alarm_notify",
+                  "prealert": "alarm_notify",
+                  "tilt": "alarm_notify",
+                  "drilling": "alarm_notify",
+                  "forcedentry": "alarm_notify"
+                }
+              },
+              {
+                "behaviors": {
+                  "open": "alarm_notify",
+                  "prealert": "alarm_notify",
+                  "tilt": "alarm_notify",
+                  "drilling": "alarm_notify",
+                  "forcedentry": "alarm_notify"
+                }
+              },
+              {
+                "behaviors": {
+                  "open": "alarm_notify",
+                  "prealert": "alarm_notify",
+                  "tilt": "alarm_notify",
+                  "drilling": "alarm_notify",
+                  "forcedentry": "alarm_notify"
+                }
+              },
+              {
+                "behaviors": {
+                  "open": "alarm_notify",
+                  "prealert": "alarm_notify",
+                  "tilt": "alarm_notify",
+                  "drilling": "alarm_notify",
+                  "forcedentry": "alarm_notify"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "home": {
+            "sirens_on": false,
+            "trigger_delay": 0,
+            "privacy_mode": false
+          }
+        },
+        {
+          "away": {
+            "sirens_on": true,
+            "trigger_delay": 0,
+            "privacy_mode": false
+          }
+        }
+      ]
+    },
+    "timezone": "Europe/Zurich",
+    "endnodes": [
+      {
+        "id": "elementId000-7nYHO",
+        "type": "um01",
+        "friendly_name": "elementName000-Bylq7",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "002800001025000001104510",
+        "latest_version": "002800001025000001104510",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 1639208301416,
+        "position_status": "closed"
+      },
+      {
+        "id": "elementId001-NR3YC",
+        "type": "is01",
+        "friendly_name": "elementName001-Uow3u",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "0027000010250000000100080d",
+        "latest_version": "00270000102500000001000801"
+      },
+      {
+        "id": "elementId002-4ZQka",
+        "type": "um01",
+        "friendly_name": "elementName002-7APn5",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "002800001025000001104510",
+        "latest_version": "002800001025000001104510",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 1639208353865,
+        "position_status": "closed"
+      },
+      {
+        "id": "elementId003-3GIqp",
+        "type": "um01",
+        "friendly_name": "elementName003-VfIws",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "002800001025000001104510",
+        "latest_version": "002800001025000001104510",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 1627910463758,
+        "position_status": "open"
+      },
+      {
+        "id": "elementId004-DP1xN",
+        "type": "wd01",
+        "friendly_name": "elementName004-CwIWp",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "0052000010250000",
+        "latest_version": "0006000010250000",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 0
+      },
+      {
+        "id": "elementId005-rgEHZ",
+        "type": "um01",
+        "friendly_name": "elementName005-9GISc",
+        "status": "offline",
+        "firmware_status": "up_to_date",
+        "fw_version": "002800001025000001104510",
+        "latest_version": "002800001025000001104510",
+        "battery": {
+          "state": "critical"
+        },
+        "ts_button": 1611412113497,
+        "position_status": "unknown"
+      },
+      {
+        "id": "elementId006-WWbbP",
+        "type": "um01",
+        "friendly_name": "elementName006-DSUiv",
+        "status": "offline",
+        "firmware_status": "up_to_date",
+        "fw_version": "002800001025000001104510",
+        "latest_version": "002800001025000001104510",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 1611412290487,
+        "position_status": "unknown"
+      }
+    ],
+    "sensors": [
+      {
+        "id": "elementId000-7nYHO",
+        "type": "um01",
+        "friendly_name": "elementName000-Bylq7",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "002800001025000001104510",
+        "latest_version": "002800001025000001104510",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 1639208301416,
+        "position_status": "closed"
+      },
+      {
+        "id": "elementId001-NR3YC",
+        "type": "is01",
+        "friendly_name": "elementName001-Uow3u",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "0027000010250000000100080d",
+        "latest_version": "00270000102500000001000801"
+      },
+      {
+        "id": "elementId002-4ZQka",
+        "type": "um01",
+        "friendly_name": "elementName002-7APn5",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "002800001025000001104510",
+        "latest_version": "002800001025000001104510",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 1639208353865,
+        "position_status": "closed"
+      },
+      {
+        "id": "elementId003-3GIqp",
+        "type": "um01",
+        "friendly_name": "elementName003-VfIws",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "002800001025000001104510",
+        "latest_version": "002800001025000001104510",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 1627910463758,
+        "position_status": "open"
+      },
+      {
+        "id": "elementId004-DP1xN",
+        "type": "wd01",
+        "friendly_name": "elementName004-CwIWp",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "0052000010250000",
+        "latest_version": "0006000010250000",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 0
+      },
+      {
+        "id": "elementId005-rgEHZ",
+        "type": "um01",
+        "friendly_name": "elementName005-9GISc",
+        "status": "offline",
+        "firmware_status": "up_to_date",
+        "fw_version": "002800001025000001104510",
+        "latest_version": "002800001025000001104510",
+        "battery": {
+          "state": "critical"
+        },
+        "ts_button": 1611412113497,
+        "position_status": "unknown"
+      },
+      {
+        "id": "elementId006-WWbbP",
+        "type": "um01",
+        "friendly_name": "elementName006-DSUiv",
+        "status": "offline",
+        "firmware_status": "up_to_date",
+        "fw_version": "002800001025000001104510",
+        "latest_version": "002800001025000001104510",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 1611412290487,
+        "position_status": "unknown"
+      }
+    ]
+  },
+  {
+    "id": "baseId001-bLlVF",
+    "friendly_name": "baseName001-YiGsg",
+    "status": "online",
+    "firmware_status": "up_to_date",
+    "updates_available": false,
+    "version": "bas-002.009.002",
+    "latest_version": "bas-002.009.001",
+    "fw_outdated": false,
+    "intrusion_settings": {
+      "active_mode": "home",
+      "requestedMode": "home",
+      "modeTransitionInProgress": false,
+      "modes": [
+        {
+          "custom": {
+            "sirens_on": false,
+            "trigger_delay": 0,
+            "privacy_mode": false,
+            "settings": [
+              {
+                "endnode_id": "elementId009-pb1TK",
+                "behaviors": {
+                  "open": "ignore",
+                  "prealert": "ignore",
+                  "tilt": "ignore",
+                  "drilling": "ignore",
+                  "forcedentry": "ignore"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "night": {
+            "sirens_on": false,
+            "trigger_delay": 0,
+            "privacy_mode": false,
+            "settings": [
+              {
+                "endnode_id": "elementId009-pb1TK",
+                "behaviors": {
+                  "open": "alarm_notify",
+                  "prealert": "alarm_notify",
+                  "tilt": "alarm_notify",
+                  "drilling": "alarm_notify",
+                  "forcedentry": "alarm_notify"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "home": {
+            "sirens_on": false,
+            "trigger_delay": 0,
+            "privacy_mode": false
+          }
+        },
+        {
+          "away": {
+            "sirens_on": true,
+            "trigger_delay": 0,
+            "privacy_mode": false
+          }
+        }
+      ]
+    },
+    "endnodes": [
+      {
+        "id": "elementId007-wvE9i",
+        "type": "wd01",
+        "friendly_name": "elementName007-H10D7",
+        "status": "offline",
+        "firmware_status": "up_to_date",
+        "fw_version": "0052000010250000",
+        "latest_version": "0006000010250000",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 0
+      },
+      {
+        "id": "elementId008-VgVcW",
+        "type": "wd01",
+        "friendly_name": "elementName008-qrONy",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "0052000010250000",
+        "latest_version": "0006000010250000",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 1632422907219
+      },
+      {
+        "id": "elementId009-pb1TK",
+        "type": "um01",
+        "friendly_name": "elementName009-kE640",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "002800001025000001104510",
+        "latest_version": "002800001025000001104510",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 1641845497233,
+        "position_status": "closed"
+      }
+    ],
+    "sensors": [
+      {
+        "id": "elementId007-wvE9i",
+        "type": "wd01",
+        "friendly_name": "elementName007-H10D7",
+        "status": "offline",
+        "firmware_status": "up_to_date",
+        "fw_version": "0052000010250000",
+        "latest_version": "0006000010250000",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 0
+      },
+      {
+        "id": "elementId008-VgVcW",
+        "type": "wd01",
+        "friendly_name": "elementName008-qrONy",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "0052000010250000",
+        "latest_version": "0006000010250000",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 1632422907219
+      },
+      {
+        "id": "elementId009-pb1TK",
+        "type": "um01",
+        "friendly_name": "elementName009-kE640",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "002800001025000001104510",
+        "latest_version": "002800001025000001104510",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 1641845497233,
+        "position_status": "closed"
+      }
+    ]
+  }
+]

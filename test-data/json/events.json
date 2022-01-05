@@ -1,0 +1,566 @@
+{
+  "events": [
+    {
+      "id": "ccc5630966acbfa414591b2aa40f671e9ebfcdae",
+      "state": "ok",
+      "ts": "1641904481739",
+      "type": "battery_critical",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 001-Xensl"
+          }
+        },
+        "friendly_name": "elementName005-9GISc",
+        "id": "elementId005-rgEHZ",
+        "factoryType": "window",
+        "type": "um01",
+        "umosConfiguredType": {
+          "mainType": "window",
+          "subType": "regular"
+        },
+        "room": {
+          "id": 7146,
+          "friendlyName": "Room 001-Xensl"
+        }
+      },
+      "source_id": "baseId000-mITr7",
+      "source_name": "baseName000-Az3gH",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "88e5b9623651f6db0a85363ed51dc37101cf9a46",
+      "state": "ok",
+      "ts": "1641893675965",
+      "type": "close",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 000-5WQd3"
+          }
+        },
+        "friendly_name": "elementName002-7APn5",
+        "id": "elementId002-4ZQka",
+        "factoryType": "umos",
+        "type": "um01",
+        "umosConfiguredType": {
+          "mainType": "door",
+          "subType": "sliding"
+        },
+        "room": {
+          "id": 7145,
+          "friendlyName": "Room 000-5WQd3"
+        }
+      },
+      "source_id": "baseId000-mITr7",
+      "source_name": "baseName000-Az3gH",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "8d69aa1d75597e8415a0a56e952a27650d59bd6b",
+      "state": "ok",
+      "ts": "1641892775450",
+      "type": "open",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 000-5WQd3"
+          }
+        },
+        "friendly_name": "elementName002-7APn5",
+        "id": "elementId002-4ZQka",
+        "factoryType": "umos",
+        "type": "um01",
+        "umosConfiguredType": {
+          "mainType": "door",
+          "subType": "sliding"
+        },
+        "room": {
+          "id": 7145,
+          "friendlyName": "Room 000-5WQd3"
+        }
+      },
+      "source_id": "baseId000-mITr7",
+      "source_name": "baseName000-Az3gH",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "830e11fb19f14728361fb5b191f64619405cc3c2",
+      "state": "ok",
+      "ts": "1641834203005",
+      "type": "ack_intrusion",
+      "o": {
+        "basestationFriendlyName": "basestation name"
+      },
+      "source_id": "app-services-intrusion-detector@dkrd4.reef",
+      "source_type": "isl01",
+      "state_pre": "ok"
+    },
+    {
+      "id": "d03774691fb15c1060e457c537c65412f29e3187",
+      "state": "ok",
+      "ts": "1641833505198",
+      "type": "sirenoff",
+      "o": {
+        "frontendTags": {},
+        "friendly_name": "elementName001-Uow3u",
+        "id": "elementId001-NR3YC",
+        "type": "is01"
+      },
+      "source_id": "baseId000-mITr7",
+      "source_name": "baseName000-Az3gH",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "5b85c5bdf26e83aeed1463ee24099ecaa11252cb",
+      "state": "ok",
+      "ts": "1641833415396",
+      "type": "sirenon",
+      "o": {
+        "frontendTags": {},
+        "friendly_name": "elementName001-Uow3u",
+        "id": "elementId001-NR3YC",
+        "type": "is01"
+      },
+      "source_id": "baseId000-mITr7",
+      "source_name": "baseName000-Az3gH",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "86f12c0bce87d8b5ea69f8608d92323066fd236c",
+      "state": "ok",
+      "parents": [
+        "b057c311a29ff4db5a66536c92fda4b62ff9eae0"
+      ],
+      "ts": "1641833414502",
+      "type": "intrusion",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 002-al67p"
+          }
+        },
+        "friendly_name": "elementName009-kE640",
+        "id": "elementId009-pb1TK",
+        "factoryType": "door",
+        "type": "um01",
+        "umosConfiguredType": {
+          "mainType": "door",
+          "subType": "mainEntrance"
+        },
+        "room": {
+          "id": 446063,
+          "friendlyName": "Room 002-al67p"
+        }
+      },
+      "source_id": "baseId001-bLlVF",
+      "source_name": "baseName001-YiGsg",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "b057c311a29ff4db5a66536c92fda4b62ff9eae0",
+      "state": "ok",
+      "ts": "1641833413319",
+      "type": "drilling_alert",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 002-al67p"
+          }
+        },
+        "friendly_name": "elementName009-kE640",
+        "id": "elementId009-pb1TK",
+        "factoryType": "door",
+        "type": "um01",
+        "umosConfiguredType": {
+          "mainType": "door",
+          "subType": "mainEntrance"
+        },
+        "room": {
+          "id": 446063,
+          "friendlyName": "Room 002-al67p"
+        }
+      },
+      "source_id": "baseId001-bLlVF",
+      "source_name": "baseName001-YiGsg",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "a0301ff75c3b08991f558ee79dac7cbe0fa4c199",
+      "state": "ok",
+      "ts": "1641830927213",
+      "type": "endnode_offline_notification",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 002-al67p"
+          }
+        },
+        "friendly_name": "elementName007-H10D7",
+        "id": "elementId007-wvE9i",
+        "type": "wd01",
+        "room": {
+          "id": 446063,
+          "friendlyName": "Room 002-al67p"
+        }
+      },
+      "source_id": "baseId001-bLlVF",
+      "source_name": "baseName001-YiGsg",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "0cb2902454c9310ef98dca91ad4ee341d46d9123",
+      "state": "ok",
+      "ts": "1641826713028",
+      "type": "water_no_longer_detected",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 002-al67p"
+          }
+        },
+        "friendly_name": "elementName007-H10D7",
+        "id": "elementId007-wvE9i",
+        "type": "wd01",
+        "room": {
+          "id": 446063,
+          "friendlyName": "Room 002-al67p"
+        }
+      },
+      "source_id": "baseId001-bLlVF",
+      "source_name": "baseName001-YiGsg",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "f717b0ef929c93f5b03dc2f2908d9ba3f5dcc06b",
+      "state": "ok",
+      "ts": "1641826708339",
+      "type": "water_detected",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 002-al67p"
+          }
+        },
+        "friendly_name": "elementName007-H10D7",
+        "id": "elementId007-wvE9i",
+        "type": "wd01",
+        "room": {
+          "id": 446063,
+          "friendlyName": "Room 002-al67p"
+        }
+      },
+      "source_id": "baseId001-bLlVF",
+      "source_name": "baseName001-YiGsg",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "61ad3171e4322683e2fb2adaead697fb6474e034",
+      "state": "ok",
+      "ts": "1641825835255",
+      "type": "isl01.bs01.intrusion_mode_loaded",
+      "o": {
+        "configurationLoadedId": "0123",
+        "modeBefore": "home",
+        "modeAfter": "away",
+        "userId": "https://im.gigaset-elements.de/identity/api/v1/openid/identifier/id/xxx"
+      },
+      "source_id": "app-services-intrusion-detector@dkrd4.reef",
+      "source_type": "isl01",
+      "state_pre": "ok"
+    },
+    {
+      "id": "6b7a772355ab2d868ddd317bd0f01feeb61b9382",
+      "state": "ok",
+      "ts": "1641825835242",
+      "type": "isl01.configuration_changed.user.intrusion_mode",
+      "o": {
+        "modeBefore": "home",
+        "modeAfter": "away"
+      },
+      "source_id": "app-services-intrusion-detector@dkrd4.reef",
+      "source_type": "isl01",
+      "state_pre": "ok"
+    },
+    {
+      "id": "a2af8517939e90116171d1575b69e79e967f2590",
+      "state": "ok",
+      "ts": "1641825818693",
+      "type": "user_alarm_end",
+      "source_id": "app-services-user-alarm@dkrj1.reef",
+      "source_type": "isl01",
+      "state_pre": "ok"
+    },
+    {
+      "id": "f5dfde310f48d1495636deb5e9c3c839ad63679a",
+      "state": "ok",
+      "ts": "1641825803277",
+      "type": "user_alarm_start",
+      "source_id": "app-services-user-alarm@dkrj1.reef",
+      "source_type": "isl01",
+      "state_pre": "ok"
+    },
+    {
+      "id": "ae2f2bcd02562bf256b1220d0492f3b75e4ad3d4",
+      "state": "ok",
+      "ts": "1641799824076",
+      "type": "open",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 000-5WQd3"
+          }
+        },
+        "friendly_name": "elementName003-VfIws",
+        "id": "elementId003-3GIqp",
+        "factoryType": "door",
+        "type": "um01",
+        "umosConfiguredType": {
+          "mainType": "door",
+          "subType": "mainEntrance"
+        },
+        "room": {
+          "id": 7145,
+          "friendlyName": "Room 000-5WQd3"
+        }
+      },
+      "source_id": "baseId000-mITr7",
+      "source_name": "baseName000-Az3gH",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "c06cd70afa8bac525eff9d0bdac00c907b34af8a",
+      "state": "ok",
+      "ts": "1641799705099",
+      "type": "close",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 000-5WQd3"
+          }
+        },
+        "friendly_name": "elementName003-VfIws",
+        "id": "elementId003-3GIqp",
+        "factoryType": "door",
+        "type": "um01",
+        "umosConfiguredType": {
+          "mainType": "door",
+          "subType": "mainEntrance"
+        },
+        "room": {
+          "id": 7145,
+          "friendlyName": "Room 000-5WQd3"
+        }
+      },
+      "source_id": "baseId000-mITr7",
+      "source_name": "baseName000-Az3gH",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "eb55768632d8bba494163eca2b5d4e9b0c519b88",
+      "state": "ok",
+      "ts": "1641748153936",
+      "type": "drilling_off",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 000-5WQd3"
+          }
+        },
+        "friendly_name": "elementName003-VfIws",
+        "id": "elementId003-3GIqp",
+        "type": "um01",
+        "room": {
+          "id": 7145,
+          "friendlyName": "Room 000-5WQd3"
+        }
+      },
+      "source_id": "baseId000-mITr7",
+      "source_name": "baseName000-Az3gH",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "a6a2f9cf48ab934872122f80bd8250d19109a8cb",
+      "state": "ok",
+      "ts": "1641748151198",
+      "type": "drilling_suspected",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 000-5WQd3"
+          }
+        },
+        "friendly_name": "elementName003-VfIws",
+        "id": "elementId003-3GIqp",
+        "type": "um01",
+        "room": {
+          "id": 7145,
+          "friendlyName": "Room 000-5WQd3"
+        }
+      },
+      "source_id": "baseId000-mITr7",
+      "source_name": "baseName000-Az3gH",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "a718b304052f05038173a60624a9fbf5a9383de6",
+      "state": "ok",
+      "ts": "1640963232072",
+      "type": "close",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 001-Xensl"
+          }
+        },
+        "friendly_name": "elementName006-DSUiv",
+        "id": "elementId006-WWbbP",
+        "factoryType": "window",
+        "type": "um01",
+        "umosConfiguredType": {
+          "mainType": "window",
+          "subType": "regular"
+        },
+        "room": {
+          "id": 7146,
+          "friendlyName": "Room 001-Xensl"
+        }
+      },
+      "source_id": "baseId000-mITr7",
+      "source_name": "baseName000-Az3gH",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "a413b699f16b011a306bd8dcfeddfdeb78b4e5fa",
+      "state": "ok",
+      "ts": "1640962320936",
+      "type": "open",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 001-Xensl"
+          }
+        },
+        "friendly_name": "elementName006-DSUiv",
+        "id": "elementId006-WWbbP",
+        "factoryType": "window",
+        "type": "um01",
+        "umosConfiguredType": {
+          "mainType": "window",
+          "subType": "regular"
+        },
+        "room": {
+          "id": 7146,
+          "friendlyName": "Room 001-Xensl"
+        }
+      },
+      "source_id": "baseId000-mITr7",
+      "source_name": "baseName000-Az3gH",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "148f758c27798134be1db0838c3aabde43a18048",
+      "state": "ok",
+      "ts": "1640940929947",
+      "type": "endnode_online_notification",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 000-5WQd3"
+          }
+        },
+        "friendly_name": "elementName000-Bylq7",
+        "id": "elementId000-7nYHO",
+        "factoryType": "window",
+        "type": "um01",
+        "umosConfiguredType": {
+          "mainType": "window",
+          "subType": "regular"
+        },
+        "room": {
+          "id": 7145,
+          "friendlyName": "Room 000-5WQd3"
+        }
+      },
+      "source_id": "baseId000-mITr7",
+      "source_name": "baseName000-Az3gH",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "301cef63461ae286cf05d89ae065fc3c118fa876",
+      "state": "ok",
+      "ts": "1640898221392",
+      "type": "sensor_offline_notification",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 000-5WQd3"
+          }
+        },
+        "friendly_name": "elementName000-Bylq7",
+        "id": "elementId000-7nYHO",
+        "factoryType": "window",
+        "type": "um01",
+        "umosConfiguredType": {
+          "mainType": "window",
+          "subType": "regular"
+        },
+        "room": {
+          "id": 7145,
+          "friendlyName": "Room 000-5WQd3"
+        }
+      },
+      "source_id": "baseId000-mITr7",
+      "source_name": "baseName000-Az3gH",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    },
+    {
+      "id": "357f12e10b35863f647f04d04d781a715433e83c",
+      "state": "ok",
+      "ts": "1639816610678",
+      "type": "tilt",
+      "o": {
+        "frontendTags": {
+          "room": {
+            "roomName": "Room 001-Xensl"
+          }
+        },
+        "friendly_name": "elementName006-DSUiv",
+        "id": "elementId006-WWbbP",
+        "factoryType": "window",
+        "type": "um01",
+        "umosConfiguredType": {
+          "mainType": "window",
+          "subType": "regular"
+        },
+        "room": {
+          "id": 7146,
+          "friendlyName": "Room 001-Xensl"
+        }
+      },
+      "source_id": "baseId000-mITr7",
+      "source_name": "baseName000-Az3gH",
+      "source_type": "basestation",
+      "state_pre": "ok"
+    }
+  ],
+  "home_state": "ok"
+}

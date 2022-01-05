@@ -1,0 +1,478 @@
+{
+  "gp01": [],
+  "gp02": [],
+  "yc01": [],
+  "bs01": [
+    {
+      "id": "baseId000-mITr7",
+      "type": "bs01",
+      "friendlyName": "baseName000-Az3gH",
+      "firmwareStatus": "up_to_date",
+      "firmwareVersion": "bas-002.009.002",
+      "latestFirmwareVersion": "bas-002.009.001",
+      "connectionStatus": "online",
+      "timezone": "Europe/Zurich",
+      "pairingMode": false,
+      "subelements": [
+        {
+          "id": "baseId000-mITr7.elementId001-NR3YC",
+          "type": "bs01.is01",
+          "friendlyName": "elementName001-Uow3u",
+          "firmwareStatus": "up_to_date",
+          "firmwareVersion": "0027000010250000000100080d",
+          "latestFirmwareVersion": "00270000102500000001000801",
+          "connectionStatus": "online",
+          "capabilities": []
+        },
+        {
+          "id": "baseId000-mITr7.elementId002-4ZQka",
+          "type": "bs01.um01",
+          "friendlyName": "elementName002-7APn5",
+          "firmwareStatus": "up_to_date",
+          "firmwareVersion": "002800001025000001104510",
+          "latestFirmwareVersion": "002800001025000001104510",
+          "connectionStatus": "online",
+          "batteryStatus": "ok",
+          "positionStatus": "closed",
+          "calibrationStatus": "cal2done",
+          "lastCalReqTimestamp": 1639208359443,
+          "runtimeConfiguration": {
+            "umosConfiguredType": {
+              "mainType": "door",
+              "subType": "sliding"
+            },
+            "params": {
+              "sensibility": 1,
+              "buzzerEnabled": false,
+              "drillDetectorEnabled": false
+            }
+          },
+          "states": {
+            "temperature": 19.9,
+            "pressure": 993.013,
+            "actualParams": {
+              "drillDetectorEnabled": "false",
+              "sensibility": "1",
+              "buzzerEnabled": "false"
+            },
+            "factoryType": "umos"
+          },
+          "frontendTags": {
+            "room": {
+              "roomName": "Room 000-5WQd3"
+            }
+          },
+          "room": {
+            "id": 7145,
+            "friendlyName": "Room 000-5WQd3"
+          },
+          "buttonPressedTs": 1639208353865,
+          "capabilities": [],
+          "debug": {
+            "simple": "batteryLifetimePrediction: green",
+            "extended": {
+              "batteryLifetimePredictionColor": "green"
+            }
+          }
+        },
+        {
+          "id": "baseId000-mITr7.elementId003-3GIqp",
+          "type": "bs01.um01",
+          "friendlyName": "elementName003-VfIws",
+          "firmwareStatus": "up_to_date",
+          "firmwareVersion": "002800001025000001104510",
+          "latestFirmwareVersion": "002800001025000001104510",
+          "connectionStatus": "online",
+          "batteryStatus": "ok",
+          "positionStatus": "open",
+          "calibrationStatus": "cal2done",
+          "lastCalReqTimestamp": 1627910465256,
+          "runtimeConfiguration": {
+            "umosConfiguredType": {
+              "mainType": "door",
+              "subType": "mainEntrance"
+            },
+            "params": {
+              "sensibility": 1,
+              "buzzerEnabled": true,
+              "drillDetectorEnabled": true
+            }
+          },
+          "states": {
+            "temperature": 20.6,
+            "pressure": 994.017,
+            "actualParams": {
+              "drillDetectorEnabled": "true",
+              "sensibility": "1",
+              "buzzerEnabled": "true"
+            },
+            "factoryType": "door"
+          },
+          "frontendTags": {
+            "room": {
+              "roomName": "Room 000-5WQd3"
+            }
+          },
+          "room": {
+            "id": 7145,
+            "friendlyName": "Room 000-5WQd3"
+          },
+          "buttonPressedTs": 1627910463758,
+          "capabilities": [],
+          "debug": {
+            "simple": "batteryLifetimePrediction: green",
+            "extended": {
+              "batteryLifetimePredictionColor": "green"
+            }
+          }
+        },
+        {
+          "id": "baseId000-mITr7.elementId000-7nYHO",
+          "type": "bs01.um01",
+          "friendlyName": "elementName000-Bylq7",
+          "firmwareStatus": "up_to_date",
+          "firmwareVersion": "002800001025000001104510",
+          "latestFirmwareVersion": "002800001025000001104510",
+          "connectionStatus": "online",
+          "batteryStatus": "ok",
+          "positionStatus": "closed",
+          "calibrationStatus": "cal2done",
+          "lastCalReqTimestamp": 1639208286975,
+          "runtimeConfiguration": {
+            "umosConfiguredType": {
+              "mainType": "window",
+              "subType": "regular"
+            },
+            "params": {
+              "sensibility": 0,
+              "buzzerEnabled": false,
+              "drillDetectorEnabled": false
+            }
+          },
+          "states": {
+            "temperature": 21,
+            "pressure": 992.083,
+            "actualParams": {
+              "drillDetectorEnabled": "false",
+              "sensibility": "0",
+              "buzzerEnabled": "false"
+            },
+            "factoryType": "window"
+          },
+          "frontendTags": {
+            "room": {
+              "roomName": "Room 000-5WQd3"
+            }
+          },
+          "room": {
+            "id": 7145,
+            "friendlyName": "Room 000-5WQd3"
+          },
+          "buttonPressedTs": 1639208301416,
+          "capabilities": [],
+          "debug": {
+            "simple": "batteryLifetimePrediction: green",
+            "extended": {
+              "batteryLifetimePredictionColor": "green"
+            }
+          }
+        },
+        {
+          "id": "baseId000-mITr7.elementId006-WWbbP",
+          "type": "bs01.um01",
+          "friendlyName": "elementName006-DSUiv",
+          "firmwareStatus": "up_to_date",
+          "firmwareVersion": "002800001025000001104510",
+          "latestFirmwareVersion": "002800001025000001104510",
+          "connectionStatus": "offline",
+          "batteryStatus": "ok",
+          "positionStatus": "unknown",
+          "calibrationStatus": "cal2done",
+          "lastCalReqTimestamp": 1611412291462,
+          "runtimeConfiguration": {
+            "umosConfiguredType": {
+              "mainType": "window",
+              "subType": "regular"
+            },
+            "params": {
+              "sensibility": 0,
+              "buzzerEnabled": false,
+              "drillDetectorEnabled": false
+            }
+          },
+          "states": {
+            "temperature": 20.6,
+            "pressure": 985.03,
+            "actualParams": {
+              "drillDetectorEnabled": "false",
+              "sensibility": "0",
+              "buzzerEnabled": "false"
+            },
+            "factoryType": "window"
+          },
+          "frontendTags": {
+            "room": {
+              "roomName": "Room 001-Xensl"
+            }
+          },
+          "room": {
+            "id": 7146,
+            "friendlyName": "Room 001-Xensl"
+          },
+          "buttonPressedTs": 1611412290487,
+          "capabilities": [],
+          "debug": {
+            "simple": "batteryLifetimePrediction: green",
+            "extended": {
+              "batteryLifetimePredictionColor": "green"
+            }
+          }
+        },
+        {
+          "id": "baseId000-mITr7.elementId005-rgEHZ",
+          "type": "bs01.um01",
+          "friendlyName": "elementName005-9GISc",
+          "firmwareStatus": "up_to_date",
+          "firmwareVersion": "002800001025000001104510",
+          "latestFirmwareVersion": "002800001025000001104510",
+          "connectionStatus": "offline",
+          "batteryStatus": "critical",
+          "positionStatus": "unknown",
+          "calibrationStatus": "cal1req",
+          "lastCalReqTimestamp": 1641904484733,
+          "runtimeConfiguration": {
+            "umosConfiguredType": {
+              "mainType": "window",
+              "subType": "regular"
+            },
+            "params": {
+              "sensibility": 0,
+              "buzzerEnabled": false,
+              "drillDetectorEnabled": false
+            }
+          },
+          "states": {
+            "temperature": 17.9,
+            "pressure": 985.07,
+            "actualParams": {
+              "drillDetectorEnabled": "false",
+              "sensibility": "0",
+              "buzzerEnabled": "false"
+            },
+            "factoryType": "window"
+          },
+          "frontendTags": {
+            "room": {
+              "roomName": "Room 001-Xensl"
+            }
+          },
+          "room": {
+            "id": 7146,
+            "friendlyName": "Room 001-Xensl"
+          },
+          "buttonPressedTs": 1611412113497,
+          "capabilities": [],
+          "debug": {
+            "simple": "batteryLifetimePrediction: red",
+            "extended": {
+              "batteryLifetimePredictionColor": "red"
+            }
+          }
+        },
+        {
+          "id": "baseId000-mITr7.elementId004-DP1xN",
+          "type": "bs01.wd01",
+          "friendlyName": "elementName004-CwIWp",
+          "firmwareStatus": "up_to_date",
+          "firmwareVersion": "0052000010250000",
+          "latestFirmwareVersion": "0006000010250000",
+          "connectionStatus": "online",
+          "batteryStatus": "ok",
+          "states": {
+            "temperature": 21,
+            "humidity": 48.9,
+            "waterAlarm": "water_no_longer_detected",
+            "testRequired": false,
+            "lastAlarmTestTimestamp": 1632421729489
+          },
+          "frontendTags": {
+            "room": {
+              "roomName": "Room 000-5WQd3"
+            }
+          },
+          "room": {
+            "id": 7145,
+            "friendlyName": "Room 000-5WQd3"
+          },
+          "buttonPressedTs": 0,
+          "capabilities": [],
+          "debug": {
+            "simple": "batteryLifetimePrediction: green",
+            "extended": {
+              "batteryLifetimePredictionColor": "green"
+            }
+          }
+        }
+      ],
+      "capabilities": [
+        "hardware.radio.dect.ule"
+      ],
+      "states": {
+        "dect.remaining_devices_to_be_paired": 51,
+        "dect.remaining_devices_to_be_paired._meta": {
+          "modificationTimestamp": 1641999098693
+        }
+      }
+    },
+    {
+      "id": "baseId001-bLlVF",
+      "type": "bs01",
+      "friendlyName": "baseName001-YiGsg",
+      "firmwareStatus": "up_to_date",
+      "firmwareVersion": "bas-002.009.002",
+      "latestFirmwareVersion": "bas-002.009.001",
+      "connectionStatus": "online",
+      "timezone": "Europe/Zurich",
+      "pairingMode": false,
+      "subelements": [
+        {
+          "id": "baseId001-bLlVF.elementId009-pb1TK",
+          "type": "bs01.um01",
+          "friendlyName": "elementName009-kE640",
+          "firmwareStatus": "up_to_date",
+          "firmwareVersion": "002800001025000001104510",
+          "latestFirmwareVersion": "002800001025000001104510",
+          "connectionStatus": "online",
+          "batteryStatus": "ok",
+          "positionStatus": "closed",
+          "calibrationStatus": "cal2done",
+          "lastCalReqTimestamp": 1632422170463,
+          "runtimeConfiguration": {
+            "umosConfiguredType": {
+              "mainType": "door",
+              "subType": "mainEntrance"
+            },
+            "params": {
+              "sensibility": 0,
+              "buzzerEnabled": true,
+              "drillDetectorEnabled": false
+            }
+          },
+          "states": {
+            "temperature": 14.9,
+            "pressure": 993.01,
+            "actualParams": {
+              "drillDetectorEnabled": "false",
+              "sensibility": "0",
+              "buzzerEnabled": "true"
+            },
+            "factoryType": "door"
+          },
+          "frontendTags": {
+            "room": {
+              "roomName": "Room 002-al67p"
+            }
+          },
+          "room": {
+            "id": 446063,
+            "friendlyName": "Room 002-al67p"
+          },
+          "buttonPressedTs": 1641845497233,
+          "capabilities": [],
+          "debug": {
+            "simple": "batteryLifetimePrediction: green",
+            "extended": {
+              "batteryLifetimePredictionColor": "green"
+            }
+          }
+        },
+        {
+          "id": "baseId001-bLlVF.elementId008-VgVcW",
+          "type": "bs01.wd01",
+          "friendlyName": "elementName008-qrONy",
+          "firmwareStatus": "up_to_date",
+          "firmwareVersion": "0052000010250000",
+          "latestFirmwareVersion": "0006000010250000",
+          "connectionStatus": "online",
+          "batteryStatus": "ok",
+          "states": {
+            "temperature": 14.9,
+            "humidity": 49.1,
+            "waterAlarm": "water_no_longer_detected",
+            "testRequired": false,
+            "lastAlarmTestTimestamp": 1632422950023
+          },
+          "frontendTags": {
+            "room": {
+              "roomName": "Room 002-al67p"
+            }
+          },
+          "room": {
+            "id": 446063,
+            "friendlyName": "Room 002-al67p"
+          },
+          "buttonPressedTs": 1632422907219,
+          "capabilities": [],
+          "debug": {
+            "simple": "batteryLifetimePrediction: green",
+            "extended": {
+              "batteryLifetimePredictionColor": "green"
+            }
+          }
+        },
+        {
+          "id": "baseId001-bLlVF.elementId007-wvE9i",
+          "type": "bs01.wd01",
+          "friendlyName": "elementName007-H10D7",
+          "firmwareStatus": "up_to_date",
+          "firmwareVersion": "0052000010250000",
+          "latestFirmwareVersion": "0006000010250000",
+          "connectionStatus": "offline",
+          "batteryStatus": "ok",
+          "states": {
+            "temperature": 17.1,
+            "humidity": 58.6,
+            "waterAlarm": "water_no_longer_detected",
+            "testRequired": false,
+            "lastAlarmTestTimestamp": 1641826706803
+          },
+          "frontendTags": {
+            "room": {
+              "roomName": "Room 002-al67p"
+            }
+          },
+          "room": {
+            "id": 446063,
+            "friendlyName": "Room 002-al67p"
+          },
+          "buttonPressedTs": 0,
+          "capabilities": [],
+          "debug": {
+            "simple": "batteryLifetimePrediction: green",
+            "extended": {
+              "batteryLifetimePredictionColor": "green"
+            }
+          }
+        }
+      ],
+      "frontendTags": {
+        "room": {
+          "roomName": "Room 002-al67p"
+        }
+      },
+      "capabilities": [
+        "hardware.radio.dect.ule"
+      ],
+      "states": {
+        "dect.remaining_devices_to_be_paired": 60,
+        "dect.remaining_devices_to_be_paired._meta": {
+          "modificationTimestamp": 1641999106119
+        }
+      },
+      "room": {
+        "id": 446063,
+        "friendlyName": "Room 002-al67p"
+      }
+    }
+  ]
+}
