@@ -95,7 +95,7 @@
     ],
     "watch-files": [
       "src",
-      "test"
+      "test-data"
     ]
   },
   "nyc": {
