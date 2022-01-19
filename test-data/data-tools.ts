@@ -361,19 +361,22 @@ export function mergeTestData(
   const mergedEventRoot = eventRoots[0];
   for (let i = 1; i < eventRoots.length; i++) {
     mergedEventRoot.events.push(
-      ...eventRoots[i].events.map((e) => ({
-        ...e,
-        source_id: (
-          baseStationRoots[i].find((r) => r.id === e.source_id) ?? {
-            id: e.source_id,
-          }
-        ).id,
-        source_name: (
-          baseStationRoots[i].find((r) => r.id === e.source_id) ?? {
-            friendly_name: e.source_name,
-          }
-        ).friendly_name,
-      })),
+      ...eventRoots[i].events.map((e) => {
+        const baseIndex = baseStationRoots[i].findIndex(
+          (r) => r.id === e.source_id,
+        );
+        if (baseIndex < 0) return e;
+
+        const base = mergedBaseStationRoot[baseIndex];
+        const newEvent: IEventsItem = {
+          ...e,
+          source_id: base.id,
+          source_name: base.friendly_name,
+        };
+        if (newEvent.o?.friendly_name && !newEvent.o?.id)
+          newEvent.o.friendly_name = base.friendly_name;
+        return newEvent;
+      }),
     );
   }
   // sort events
