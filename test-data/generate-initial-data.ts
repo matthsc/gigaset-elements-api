@@ -1,10 +1,8 @@
 /* eslint-disable no-console */
+import "dotenv/config";
 import { createApi, printStatsFromJson } from "./generate-tools";
 import { saveBaseStations, saveElements, saveEvents } from "./data-loader";
 import { retrieveAndPrepareTestData } from ".";
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-require("dotenv").config();
 
 const runMe = async () => {
   // init

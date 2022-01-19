@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+import "dotenv/config";
 import { createApi, printStatsFromJson } from "./generate-tools";
 import {
   loadBaseStations,
@@ -8,9 +9,6 @@ import {
 } from ".";
 import { saveBaseStations, saveElements, saveEvents } from "./data-loader";
 import { mergeTestData } from "./data-tools";
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-require("dotenv").config();
 
 const runMe = async () => {
   // init
