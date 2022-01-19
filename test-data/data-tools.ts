@@ -195,6 +195,8 @@ function tryStripPersonalDataFromEvents(
       o.id = maps.elementIds.get(elementId) ?? o.id;
       o.friendly_name = maps.elementNames.get(elementId) ?? o.friendly_name;
       tryStripPersonalDataFromRooms(o, maps);
+    } else if (o.friendly_name) {
+      o.friendly_name = event.source_name;
     }
     if (o.userId) {
       o.userId = o.userId.substring(0, o.userId.lastIndexOf("/")) + "/xxx";
@@ -205,6 +207,7 @@ function tryStripPersonalDataFromEvents(
     if (o.basestationFriendlyName) {
       o.basestationFriendlyName = "basestation name";
     }
+    tryStripPersonalDataFromRooms(o, maps);
   }
 }
 
