@@ -11,7 +11,7 @@ Promise.all([loadBaseStations(true), loadElements(true)]).then(
         assert.isArray(elementRoot.bs01);
       });
 
-      it("has same number of basestations as base-stations.xml", () => {
+      it("has same number of basestations as base-stations.json", () => {
         assert.equal(elementRoot.bs01.length, basestationRoot.length);
       });
 
@@ -22,7 +22,7 @@ Promise.all([loadBaseStations(true), loadElements(true)]).then(
             basestation = basestationRoot.find((bs) => bs.id === bs01.id)!;
           });
 
-          it("has matching basestation in base-stations.xml", () => {
+          it("has matching basestation in base-stations.json", () => {
             assert.exists(basestation);
             assert.equal(
               bs01.friendlyName,
@@ -31,11 +31,11 @@ Promise.all([loadBaseStations(true), loadElements(true)]).then(
             );
           });
 
-          it("has same number of elements as in base-stations.xml", () => {
+          it("has same number of elements as in base-stations.json", () => {
             assert.equal(bs01.subelements.length, basestation.endnodes.length);
           });
 
-          it("has same ids as elements in base-stations.xml", () => {
+          it("has same ids as elements in base-stations.json", () => {
             for (const element of bs01.subelements) {
               const [baseId, elementId] = element.id.split(".");
               assert.equal(baseId, bs01.id, "BasestationId should match");

@@ -3,7 +3,7 @@ import { assert } from "chai";
 import { loadBaseStations } from "../data-loader";
 
 loadBaseStations(true).then((basestationRoot) => {
-  describe("base-stations.xml", () => {
+  describe("base-stations.json", () => {
     it("contains an array of baseStations", () => {
       assert.isArray(basestationRoot);
     });
