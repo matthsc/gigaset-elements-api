@@ -4,6 +4,7 @@ import {
   IEndnodesItem,
   IEventRoot,
   IEventsItem,
+  IGp02Item,
   IRoom,
   ISensorsItem,
   ISettingsItem,
@@ -60,6 +61,8 @@ interface IPersonalDataMaps {
   elementIds: Map<string, string>;
   elementNames: Map<string, string>;
   roomNames: Map<string, string>;
+  gp02Ids: Map<string, string>;
+  gp02Names: Map<string, string>;
   getOrCreateId: (
     map: Map<string, string>,
     prefix: string,
@@ -79,6 +82,8 @@ export function tryStripPersonalDataAndGiveUniqueIds(
     elementIds: new Map<string, string>(),
     elementNames: new Map<string, string>(),
     roomNames: new Map<string, string>(),
+    gp02Ids: new Map<string, string>(),
+    gp02Names: new Map<string, string>(),
     getOrCreateId: (
       map: Map<string, string>,
       prefix: string,
@@ -161,6 +166,7 @@ function tryStripPersonalDataFromElement(
   elementRoot: IElementRoot,
   maps: IPersonalDataMaps,
 ) {
+  // bs01
   for (const bs01 of elementRoot.bs01) {
     const { id: baseId } = bs01;
     bs01.id = maps.baseIds.get(baseId) as string;
@@ -178,6 +184,12 @@ function tryStripPersonalDataFromElement(
       tryStripPersonalDataFromRooms(subelement, maps);
     }
   }
+  // gp02
+  for (const gp02 of elementRoot.gp02) {
+    gp02.id = maps.getOrCreateId(maps.gp02Ids, "gp02Id", gp02.id);
+    gp02.friendlyName = maps.getOrCreateId(maps.gp02Names, "gp02Name", gp02.id);
+    tryStripPersonalDataFromRooms(gp02, maps);
+  }
 }
 
 function tryStripPersonalDataFromEvents(
@@ -185,9 +197,13 @@ function tryStripPersonalDataFromEvents(
   maps: IPersonalDataMaps,
 ) {
   for (const event of events) {
-    const { source_id: baseId, o } = event;
-    event.source_id = maps.baseIds.get(baseId) ?? event.source_id;
-    event.source_name = maps.baseNames.get(baseId) ?? event.source_name;
+    const { source_id, source_type, o } = event;
+    const [deviceIdsMap, deviceNamesMap] = getMapsBasedOnSourceType(
+      source_type,
+      maps,
+    );
+    event.source_id = deviceIdsMap.get(source_id) ?? event.source_id;
+    event.source_name = deviceNamesMap.get(source_id) ?? event.source_name;
 
     if (!o) continue;
     if (o.id) {
@@ -207,7 +223,23 @@ function tryStripPersonalDataFromEvents(
     if (o.basestationFriendlyName) {
       o.basestationFriendlyName = "basestation name";
     }
+    if (o.clip) {
+      o.clip = "00" + Math.random().toString().substring(2).replace(/^0+/g, "");
+    }
     tryStripPersonalDataFromRooms(o, maps);
+  }
+}
+
+function getMapsBasedOnSourceType(
+  source_type: string,
+  maps: IPersonalDataMaps,
+) {
+  switch (source_type) {
+    case "gp02":
+      return [maps.gp02Ids, maps.gp02Names];
+    case "basestation":
+    default:
+      return [maps.baseIds, maps.baseNames];
   }
 }
 
@@ -241,14 +273,16 @@ export function reduceTestData(
 ) {
   // init
   const elementIdRemapping = new Map<string, ISubelementsItem>();
+  const gp02IdRemapping = new Map<string, IGp02Item>();
   const getElementKey = (item: ISubelementsItem): string =>
     `${item.type}-${item.states?.factoryType}-${item.batteryStatus}-${item.calibrationStatus}-${item.connectionStatus}`;
+  const getGp02Key = (item: IGp02Item): string => `${item.connectionStatus}`;
   const getEventKey = (item: IEventsItem): string =>
-    `${item.type}-${item.o?.type}-${item.o?.factoryType}`;
+    `${item.type}-${item.o?.type}-${item.o?.factoryType}-${item.o?.call_type}-${item.o?.clip_type}-${item.o?.dialable}-${item.o?.line_type}`;
   const getElementIdFromEvent = (item: IEventsItem): string =>
     `${item.source_id}.${item.o?.id}`;
 
-  // determine unique elements per base station
+  // determine unique elements per bs01 / base station
   for (const bs01 of elementRoot.bs01) {
     const uniqueElementTypeMap = new Map<string, ISubelementsItem>();
     for (const subelement of bs01.subelements) {
@@ -261,6 +295,16 @@ export function reduceTestData(
       } else {
         uniqueElementTypeMap.set(key, subelement);
       }
+    }
+  }
+  // determine unique elements per gp02
+  const uniqueGp02TypeMap = new Map<string, IGp02Item>();
+  for (const gp02 of elementRoot.gp02) {
+    const key = getGp02Key(gp02);
+    if (uniqueGp02TypeMap.has(key)) {
+      gp02IdRemapping.set(gp02.id, uniqueGp02TypeMap.get(key) as IGp02Item);
+    } else {
+      uniqueGp02TypeMap.set(key, gp02);
     }
   }
 
@@ -278,6 +322,8 @@ export function reduceTestData(
       (s) => !elementIdRemapping.has(s.id),
     );
   }
+  // filter gp02
+  elementRoot.gp02 = elementRoot.gp02.filter((g) => !gp02IdRemapping.has(g.id));
 
   // remap and filter events
   const uniqueEventTypes = new Set<string>();
@@ -304,6 +350,14 @@ export function reduceTestData(
             o.friendly_name = mappedElement.friendlyName;
           }
         }
+
+        if (
+          mapped.source_type === "gp02" &&
+          gp02IdRemapping.has(mapped.source_id)
+        ) {
+          mapped.source_id = gp02IdRemapping.get(mapped.source_id)
+            ?.id as string;
+        }
       }
       return mapped;
     })
@@ -321,27 +375,93 @@ export function mergeTestData(
   });
   elementRoots.forEach((r) => {
     r.bs01.sort((a, b) => a.friendlyName.localeCompare(b.friendlyName));
+    r.bs02.sort((a, b) => a.friendlyName.localeCompare(b.friendlyName));
+    r.gp01.sort((a, b) => a.friendlyName.localeCompare(b.friendlyName));
+    r.gp02.sort((a, b) => a.friendlyName.localeCompare(b.friendlyName));
+    r.yc01.sort((a, b) => a.friendlyName.localeCompare(b.friendlyName));
   });
 
   // merge base stations, including elements
-  const mergedBaseStationRoot = baseStationRoots[0];
-  for (let i = 1; i < baseStationRoots.length; i++) {
-    const currentBaseStationRoot = baseStationRoots[i];
-    for (let j = 0; j < baseStationRoots[i].length; j++) {
-      const currentBaseStation = currentBaseStationRoot[j];
-      if (j >= mergedBaseStationRoot.length) {
-        mergedBaseStationRoot.push(currentBaseStation);
-      } else {
-        mergedBaseStationRoot[j].endnodes.push(...currentBaseStation.endnodes);
-        mergedBaseStationRoot[j].sensors.push(...currentBaseStation.sensors);
-      }
-    }
-  }
-
+  const mergedBaseStationRoot = mergeBaseStationRoots(baseStationRoots);
   // merge elements, fix ids
+  const mergedElementsRoot = mergeElementsRoots(elementRoots);
+  // merge events, fix ids
+  const mergedEventRoot = mergeEventRoots(
+    eventRoots,
+    baseStationRoots,
+    mergedBaseStationRoot,
+    elementRoots,
+    mergedElementsRoot,
+  );
+
+  // reduce data, and run tryStripPersonalDataAndGiveUniqueIds again
+  reduceTestData(mergedBaseStationRoot, mergedElementsRoot, mergedEventRoot);
+  tryStripPersonalDataAndGiveUniqueIds(
+    mergedBaseStationRoot,
+    mergedElementsRoot,
+    mergedEventRoot,
+  );
+  return [mergedBaseStationRoot, mergedElementsRoot, mergedEventRoot];
+}
+
+function mergeEventRoots(
+  eventRoots: IEventRoot[],
+  baseStationRoots: IBaseStationRoot[],
+  mergedBaseStationRoot: IBaseStationRoot,
+  elementRoots: IElementRoot[],
+  mergedElementRoots: IElementRoot,
+) {
+  const mergedEventRoot = eventRoots[0];
+  for (let i = 1; i < eventRoots.length; i++) {
+    mergedEventRoot.events.push(
+      ...eventRoots[i].events.map((e) => {
+        switch (e.source_type) {
+          case "gp02": {
+            const gp02Index = elementRoots[i].gp02.findIndex(
+              (r) => r.id === e.source_id,
+            );
+            if (gp02Index < 0) return e;
+
+            const element = mergedElementRoots.gp02[gp02Index];
+            const newEvent: IEventsItem = {
+              ...e,
+              source_id: element.id,
+            };
+            if (newEvent.o?.friendly_name && !newEvent.o?.id)
+              newEvent.o.friendly_name = element.friendlyName;
+            return newEvent;
+          }
+          case "basestation":
+          default: {
+            const baseIndex = baseStationRoots[i].findIndex(
+              (r) => r.id === e.source_id,
+            );
+            if (baseIndex < 0) return e;
+
+            const base = mergedBaseStationRoot[baseIndex];
+            const newEvent: IEventsItem = {
+              ...e,
+              source_id: base.id,
+              source_name: base.friendly_name,
+            };
+            if (newEvent.o?.friendly_name && !newEvent.o?.id)
+              newEvent.o.friendly_name = base.friendly_name;
+            return newEvent;
+          }
+        }
+      }),
+    );
+  }
+  // sort events
+  mergedEventRoot.events.sort((a, b) => b.ts.localeCompare(a.ts));
+  return mergedEventRoot;
+}
+
+function mergeElementsRoots(elementRoots: IElementRoot[]) {
   const mergedElementsRoot = elementRoots[0];
   for (let i = 1; i < elementRoots.length; i++) {
     const currentElementRoot = elementRoots[i];
+    // bs01
     for (let j = 0; j < currentElementRoot.bs01.length; j++) {
       const currentBs01 = currentElementRoot.bs01[j];
       if (j >= mergedElementsRoot.bs01.length) {
@@ -355,39 +475,29 @@ export function mergeTestData(
         );
       }
     }
+    // gp02
+    for (let j = 0; j < currentElementRoot.gp02.length; j++) {
+      const currentGp02 = currentElementRoot.gp02[j];
+      if (j >= mergedElementsRoot.gp02.length)
+        mergedElementsRoot.gp02.push(currentGp02);
+    }
   }
+  return mergedElementsRoot;
+}
 
-  // merge events, fix ids
-  const mergedEventRoot = eventRoots[0];
-  for (let i = 1; i < eventRoots.length; i++) {
-    mergedEventRoot.events.push(
-      ...eventRoots[i].events.map((e) => {
-        const baseIndex = baseStationRoots[i].findIndex(
-          (r) => r.id === e.source_id,
-        );
-        if (baseIndex < 0) return e;
-
-        const base = mergedBaseStationRoot[baseIndex];
-        const newEvent: IEventsItem = {
-          ...e,
-          source_id: base.id,
-          source_name: base.friendly_name,
-        };
-        if (newEvent.o?.friendly_name && !newEvent.o?.id)
-          newEvent.o.friendly_name = base.friendly_name;
-        return newEvent;
-      }),
-    );
+function mergeBaseStationRoots(baseStationRoots: IBaseStationRoot[]) {
+  const mergedBaseStationRoot = baseStationRoots[0];
+  for (let i = 1; i < baseStationRoots.length; i++) {
+    const currentBaseStationRoot = baseStationRoots[i];
+    for (let j = 0; j < baseStationRoots[i].length; j++) {
+      const currentBaseStation = currentBaseStationRoot[j];
+      if (j >= mergedBaseStationRoot.length) {
+        mergedBaseStationRoot.push(currentBaseStation);
+      } else {
+        mergedBaseStationRoot[j].endnodes.push(...currentBaseStation.endnodes);
+        mergedBaseStationRoot[j].sensors.push(...currentBaseStation.sensors);
+      }
+    }
   }
-  // sort events
-  mergedEventRoot.events.sort((a, b) => b.ts.localeCompare(a.ts));
-
-  // reduce data, and run tryStripPersonalDataAndGiveUniqueIds again
-  reduceTestData(mergedBaseStationRoot, mergedElementsRoot, mergedEventRoot);
-  tryStripPersonalDataAndGiveUniqueIds(
-    mergedBaseStationRoot,
-    mergedElementsRoot,
-    mergedEventRoot,
-  );
-  return [mergedBaseStationRoot, mergedElementsRoot, mergedEventRoot];
+  return mergedBaseStationRoot;
 }

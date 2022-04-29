@@ -128,6 +128,8 @@ So far the library has been tested with the following sensors, which have also t
 | um01   | Universal/Window/Door |
 | wd01   | Water                 |
 
+In addition definitions and test data for IP Phones (gp02) has been included.
+
 # Contributing
 
 ## Running tests

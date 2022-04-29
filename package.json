@@ -37,6 +37,8 @@
     "generate:json-definitions": "ts-node ./src/model/generate",
     "generate:initial-test-data": "ts-node ./test-data/generate-initial-data && mocha -f .json --reporter landing",
     "generate:merge-test-data": "ts-node test-data/generate-and-merge && mocha -f .json --reporter landing",
+    "load:merge-test-data": "ts-node test-data/load-and-merge.ts && mocha -f .json --reporter landing",
+    "X": "mocha -f .json --reporter landing",
     "prepare": "npm run build",
     "prepublishOnly": "npm run check",
     "preversion": "npm run lint",

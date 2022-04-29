@@ -67,3 +67,4 @@ jspm_packages/
 
 # generated output
 dist
+test-data/load-and-merge.json

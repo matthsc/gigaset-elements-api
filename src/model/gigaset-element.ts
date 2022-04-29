@@ -1,9 +1,27 @@
 /* eslint-disable */
 export interface IElementRoot {
   gp01: any[];
-  gp02: any[];
+  gp02: IGp02Item[];
   yc01: any[];
   bs01: IBs01Item[];
+  bs02: any[];
+}
+export interface IGp02Item {
+  id: string;
+  friendlyName: string;
+  frontendTags: IFrontendTags;
+  connectionStatus: string;
+  room: IRoom;
+  capabilities: string[];
+  subelements: any[];
+}
+export interface IFrontendTags {
+  room: IRoom;
+}
+export interface IRoom {
+  roomName?: string;
+  id?: number;
+  friendlyName?: string;
 }
 export interface IBs01Item {
   id: string;
@@ -72,14 +90,6 @@ export interface IActualParams {
   drillDetectorEnabled: string;
   sensibility: string;
   buzzerEnabled: string;
-}
-export interface IFrontendTags {
-  room: IRoom;
-}
-export interface IRoom {
-  roomName?: string;
-  id?: number;
-  friendlyName?: string;
 }
 export interface IDebug {
   simple: string;

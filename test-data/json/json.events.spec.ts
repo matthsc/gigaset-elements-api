@@ -20,6 +20,20 @@ describe("events.json", () => {
     assert.isArray(eventRoot.events);
   });
 
+  it("events have a timestamp/ts property", async () => {
+    for (const event of eventRoot.events) {
+      const eventString = JSON.stringify(event);
+      assert.exists(event.ts, "ts is nunll or undefined: " + eventString);
+      assert.typeOf(
+        event.ts,
+        "string",
+        "ts is not of type string: " + eventString,
+      );
+      const parsed = Number.parseInt(event.ts, 10);
+      assert.isNotNaN(parsed, "parsing ts yields NaN: " + eventString);
+    }
+  });
+
   it("events are sorted in descending order by ts", async () => {
     const { events } = eventRoot;
     assert.isAbove(events.length, 2);

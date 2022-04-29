@@ -1,15 +1,18 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
+import { IBaseStationRootItem, IElementRoot } from "../../src";
 import { loadBaseStations, loadElements } from "..";
-import { IBaseStationRootItem } from "../../src";
 import { assert } from "chai";
 
 Promise.all([loadBaseStations(true), loadElements(true)]).then(
   ([basestationRoot, elementRoot]) => {
     describe("elements.json", () => {
-      it("contains a bs01 array", () => {
-        assert.exists(elementRoot.bs01);
-        assert.isArray(elementRoot.bs01);
-      });
+      for (const type of ["bs01", "bs02", "gp01", "gp02", "yc01"] as Array<
+        keyof IElementRoot
+      >)
+        it(`contains a ${type} array`, () => {
+          assert.exists(elementRoot[type]);
+          assert.isArray(elementRoot[type]);
+        });
 
       it("has same number of basestations as base-stations.json", () => {
         assert.equal(elementRoot.bs01.length, basestationRoot.length);
