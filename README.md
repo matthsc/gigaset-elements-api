@@ -122,11 +122,12 @@ api.needsAuth(): boolean;
 
 So far the library has been tested with the following sensors, which have also test data available:
 
-| Sensor | Description           |
-| ------ | --------------------- |
-| is01   | Siren                 |
-| um01   | Universal/Window/Door |
-| wd01   | Water                 |
+| Sensor | Description              |
+| ------ | ------------------------ |
+| is01   | Siren                    |
+| um01   | Universal/Window/Door    |
+| wd01   | Water                    |
+| sd01   | Smoke (only test alarms) |
 
 In addition definitions and test data for IP Phones (gp02) has been included.
 

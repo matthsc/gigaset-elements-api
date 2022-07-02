@@ -2,17 +2,17 @@
   "gp01": [],
   "gp02": [
     {
-      "id": "gp02Id000-ZjywS",
-      "friendlyName": "gp02Name000-WZUIg",
+      "id": "gp02Id000-1VsYD",
+      "friendlyName": "gp02Name000-VA7El",
       "frontendTags": {
         "room": {
-          "roomName": "Room 006-d9pET"
+          "roomName": "Room 007-X446u"
         }
       },
       "connectionStatus": "online",
       "room": {
         "id": 564537,
-        "friendlyName": "Room 006-d9pET"
+        "friendlyName": "Room 007-X446u"
       },
       "capabilities": [
         "hardware.radio.dect.voice",
@@ -24,9 +24,9 @@
   "yc01": [],
   "bs01": [
     {
-      "id": "baseId000-wrfmS",
+      "id": "baseId000-XTKXp",
       "type": "bs01",
-      "friendlyName": "baseName000-lCU6N",
+      "friendlyName": "baseName000-eytOw",
       "firmwareStatus": "up_to_date",
       "firmwareVersion": "bas-002.009.002",
       "latestFirmwareVersion": "bas-002.009.001",
@@ -35,9 +35,9 @@
       "pairingMode": false,
       "subelements": [
         {
-          "id": "baseId000-wrfmS.elementId001-mChqc",
+          "id": "baseId000-XTKXp.elementId001-Bq3Dx",
           "type": "bs01.is01",
-          "friendlyName": "elementName001-YX793",
+          "friendlyName": "elementName001-fgFRL",
           "firmwareStatus": "up_to_date",
           "firmwareVersion": "0027000010250000000100080d",
           "latestFirmwareVersion": "00270000102500000001000801",
@@ -45,9 +45,9 @@
           "capabilities": []
         },
         {
-          "id": "baseId000-wrfmS.elementId002-UkCZA",
+          "id": "baseId000-XTKXp.elementId002-4O6j2",
           "type": "bs01.um01",
-          "friendlyName": "elementName002-Tvzgw",
+          "friendlyName": "elementName002-a8ZBp",
           "firmwareStatus": "up_to_date",
           "firmwareVersion": "002800001025000001104510",
           "latestFirmwareVersion": "002800001025000001104510",
@@ -79,12 +79,12 @@
           },
           "frontendTags": {
             "room": {
-              "roomName": "Room 000-k2Teb"
+              "roomName": "Room 000-vIsBP"
             }
           },
           "room": {
             "id": 7145,
-            "friendlyName": "Room 000-k2Teb"
+            "friendlyName": "Room 000-vIsBP"
           },
           "buttonPressedTs": 1639208353865,
           "capabilities": [],
@@ -96,9 +96,9 @@
           }
         },
         {
-          "id": "baseId000-wrfmS.elementId003-FPIBZ",
+          "id": "baseId000-XTKXp.elementId003-MOKQn",
           "type": "bs01.um01",
-          "friendlyName": "elementName003-NSj3X",
+          "friendlyName": "elementName003-5Se55",
           "firmwareStatus": "up_to_date",
           "firmwareVersion": "002800001025000001104510",
           "latestFirmwareVersion": "002800001025000001104510",
@@ -130,12 +130,12 @@
           },
           "frontendTags": {
             "room": {
-              "roomName": "Room 000-k2Teb"
+              "roomName": "Room 000-vIsBP"
             }
           },
           "room": {
             "id": 7145,
-            "friendlyName": "Room 000-k2Teb"
+            "friendlyName": "Room 000-vIsBP"
           },
           "buttonPressedTs": 1627910463758,
           "capabilities": [],
@@ -147,9 +147,9 @@
           }
         },
         {
-          "id": "baseId000-wrfmS.elementId000-yIyYO",
+          "id": "baseId000-XTKXp.elementId000-lcYZk",
           "type": "bs01.um01",
-          "friendlyName": "elementName000-UIOro",
+          "friendlyName": "elementName000-ulXmA",
           "firmwareStatus": "up_to_date",
           "firmwareVersion": "002800001025000001104510",
           "latestFirmwareVersion": "002800001025000001104510",
@@ -181,12 +181,12 @@
           },
           "frontendTags": {
             "room": {
-              "roomName": "Room 000-k2Teb"
+              "roomName": "Room 000-vIsBP"
             }
           },
           "room": {
             "id": 7145,
-            "friendlyName": "Room 000-k2Teb"
+            "friendlyName": "Room 000-vIsBP"
           },
           "buttonPressedTs": 1639208301416,
           "capabilities": [],
@@ -198,9 +198,9 @@
           }
         },
         {
-          "id": "baseId000-wrfmS.elementId006-Ggs7r",
+          "id": "baseId000-XTKXp.elementId006-gOxr0",
           "type": "bs01.um01",
-          "friendlyName": "elementName006-KbqbH",
+          "friendlyName": "elementName006-gQs4l",
           "firmwareStatus": "up_to_date",
           "firmwareVersion": "002800001025000001104510",
           "latestFirmwareVersion": "002800001025000001104510",
@@ -232,12 +232,12 @@
           },
           "frontendTags": {
             "room": {
-              "roomName": "Room 001-Eok4V"
+              "roomName": "Room 001-uoQTM"
             }
           },
           "room": {
             "id": 7146,
-            "friendlyName": "Room 001-Eok4V"
+            "friendlyName": "Room 001-uoQTM"
           },
           "buttonPressedTs": 1611412290487,
           "capabilities": [],
@@ -249,9 +249,9 @@
           }
         },
         {
-          "id": "baseId000-wrfmS.elementId005-REbTD",
+          "id": "baseId000-XTKXp.elementId005-X67KG",
           "type": "bs01.um01",
-          "friendlyName": "elementName005-qLbdB",
+          "friendlyName": "elementName005-5GdFi",
           "firmwareStatus": "up_to_date",
           "firmwareVersion": "002800001025000001104510",
           "latestFirmwareVersion": "002800001025000001104510",
@@ -283,12 +283,12 @@
           },
           "frontendTags": {
             "room": {
-              "roomName": "Room 001-Eok4V"
+              "roomName": "Room 001-uoQTM"
             }
           },
           "room": {
             "id": 7146,
-            "friendlyName": "Room 001-Eok4V"
+            "friendlyName": "Room 001-uoQTM"
           },
           "buttonPressedTs": 1611412113497,
           "capabilities": [],
@@ -300,9 +300,9 @@
           }
         },
         {
-          "id": "baseId000-wrfmS.elementId004-UACE5",
+          "id": "baseId000-XTKXp.elementId004-W920a",
           "type": "bs01.wd01",
-          "friendlyName": "elementName004-YnOkY",
+          "friendlyName": "elementName004-ME246",
           "firmwareStatus": "up_to_date",
           "firmwareVersion": "0052000010250000",
           "latestFirmwareVersion": "0006000010250000",
@@ -317,12 +317,12 @@
           },
           "frontendTags": {
             "room": {
-              "roomName": "Room 000-k2Teb"
+              "roomName": "Room 000-vIsBP"
             }
           },
           "room": {
             "id": 7145,
-            "friendlyName": "Room 000-k2Teb"
+            "friendlyName": "Room 000-vIsBP"
           },
           "buttonPressedTs": 0,
           "capabilities": [],
@@ -334,9 +334,9 @@
           }
         },
         {
-          "id": "baseId000-wrfmS.elementId007-cOD9W",
+          "id": "baseId000-XTKXp.elementId007-50lzC",
           "type": "bs01.um01",
-          "friendlyName": "elementName007-rvhQO",
+          "friendlyName": "elementName007-WsWBW",
           "firmwareStatus": "up_to_date",
           "firmwareVersion": "002800001025000001104510",
           "latestFirmwareVersion": "002800001025000001104510",
@@ -368,12 +368,12 @@
           },
           "frontendTags": {
             "room": {
-              "roomName": "Room 002-yKG3q"
+              "roomName": "Room 002-FKdzD"
             }
           },
           "room": {
             "id": 7145,
-            "friendlyName": "Room 002-yKG3q"
+            "friendlyName": "Room 002-FKdzD"
           },
           "buttonPressedTs": 1646387456154,
           "capabilities": [],
@@ -385,9 +385,9 @@
           }
         },
         {
-          "id": "baseId000-wrfmS.elementId009-XiW9V",
+          "id": "baseId000-XTKXp.elementId009-UyOYG",
           "type": "bs01.um01",
-          "friendlyName": "elementName009-PSXSR",
+          "friendlyName": "elementName009-dwpj0",
           "firmwareStatus": "up_to_date",
           "firmwareVersion": "002800001025000001104510",
           "latestFirmwareVersion": "002800001025000001104510",
@@ -419,12 +419,12 @@
           },
           "frontendTags": {
             "room": {
-              "roomName": "Room 003-ciGCX"
+              "roomName": "Room 003-Dyvwm"
             }
           },
           "room": {
             "id": 7146,
-            "friendlyName": "Room 003-ciGCX"
+            "friendlyName": "Room 003-Dyvwm"
           },
           "buttonPressedTs": 1611409153106,
           "capabilities": [],
@@ -436,9 +436,9 @@
           }
         },
         {
-          "id": "baseId000-wrfmS.elementId008-MAtPp",
+          "id": "baseId000-XTKXp.elementId008-A6qHP",
           "type": "bs01.um01",
-          "friendlyName": "elementName008-0Bffm",
+          "friendlyName": "elementName008-hCRsX",
           "firmwareStatus": "up_to_date",
           "firmwareVersion": "002800001025000001104510",
           "latestFirmwareVersion": "002800001025000001104510",
@@ -470,12 +470,12 @@
           },
           "frontendTags": {
             "room": {
-              "roomName": "Room 003-ciGCX"
+              "roomName": "Room 003-Dyvwm"
             }
           },
           "room": {
             "id": 7146,
-            "friendlyName": "Room 003-ciGCX"
+            "friendlyName": "Room 003-Dyvwm"
           },
           "buttonPressedTs": 1611409055973,
           "capabilities": [],
@@ -485,6 +485,42 @@
               "batteryLifetimePredictionColor": "red"
             }
           }
+        },
+        {
+          "id": "baseId000-XTKXp.elementId010-1Dlj5",
+          "type": "bs01.sd01",
+          "friendlyName": "elementName010-lbrEo",
+          "firmwareStatus": "up_to_date",
+          "firmwareVersion": "0013000010250000",
+          "latestFirmwareVersion": "0013000010250000",
+          "connectionStatus": "online",
+          "batteryStatus": "ok",
+          "frontendTags": {
+            "room": {
+              "roomName": "Room 004-elB5I"
+            }
+          },
+          "room": {
+            "id": 79283,
+            "friendlyName": "Room 004-elB5I"
+          },
+          "buttonPressedTs": 1656661747223,
+          "capabilities": [],
+          "debug": {
+            "simple": "batteryLifetimePrediction: green",
+            "extended": {
+              "batteryLifetimePredictionColor": "green"
+            }
+          },
+          "testRequired": false,
+          "unmounted": false,
+          "smokeDetected": false,
+          "permanentBatteryLow": false,
+          "permanentBatteryChangeRequest": false,
+          "smokeChamberFail": false,
+          "smokeDetectorOff": false,
+          "lastAlarmTestTimestamp": 1656661749339,
+          "lastPairingTimestamp": 1613251172762
         }
       ],
       "capabilities": [
@@ -498,9 +534,9 @@
       }
     },
     {
-      "id": "baseId001-PZw6N",
+      "id": "baseId001-DkOTY",
       "type": "bs01",
-      "friendlyName": "baseName001-3QAla",
+      "friendlyName": "baseName001-L6kVP",
       "firmwareStatus": "up_to_date",
       "firmwareVersion": "bas-002.009.002",
       "latestFirmwareVersion": "bas-002.009.001",
@@ -509,9 +545,9 @@
       "pairingMode": false,
       "subelements": [
         {
-          "id": "baseId001-PZw6N.elementId012-pcmHS",
+          "id": "baseId001-DkOTY.elementId013-Y9MA0",
           "type": "bs01.um01",
-          "friendlyName": "elementName012-x4pK4",
+          "friendlyName": "elementName013-K7XTC",
           "firmwareStatus": "up_to_date",
           "firmwareVersion": "002800001025000001104510",
           "latestFirmwareVersion": "002800001025000001104510",
@@ -543,12 +579,12 @@
           },
           "frontendTags": {
             "room": {
-              "roomName": "Room 004-HyVK6"
+              "roomName": "Room 005-Spl1W"
             }
           },
           "room": {
             "id": 446063,
-            "friendlyName": "Room 004-HyVK6"
+            "friendlyName": "Room 005-Spl1W"
           },
           "buttonPressedTs": 1641845497233,
           "capabilities": [],
@@ -560,9 +596,9 @@
           }
         },
         {
-          "id": "baseId001-PZw6N.elementId011-rWMtL",
+          "id": "baseId001-DkOTY.elementId012-3ISDr",
           "type": "bs01.wd01",
-          "friendlyName": "elementName011-wczEH",
+          "friendlyName": "elementName012-Fzt4r",
           "firmwareStatus": "up_to_date",
           "firmwareVersion": "0052000010250000",
           "latestFirmwareVersion": "0006000010250000",
@@ -577,12 +613,12 @@
           },
           "frontendTags": {
             "room": {
-              "roomName": "Room 004-HyVK6"
+              "roomName": "Room 005-Spl1W"
             }
           },
           "room": {
             "id": 446063,
-            "friendlyName": "Room 004-HyVK6"
+            "friendlyName": "Room 005-Spl1W"
           },
           "buttonPressedTs": 1632422907219,
           "capabilities": [],
@@ -594,9 +630,9 @@
           }
         },
         {
-          "id": "baseId001-PZw6N.elementId010-LKKBr",
+          "id": "baseId001-DkOTY.elementId011-ugP4t",
           "type": "bs01.wd01",
-          "friendlyName": "elementName010-CM1wj",
+          "friendlyName": "elementName011-EGssU",
           "firmwareStatus": "up_to_date",
           "firmwareVersion": "0052000010250000",
           "latestFirmwareVersion": "0006000010250000",
@@ -611,12 +647,12 @@
           },
           "frontendTags": {
             "room": {
-              "roomName": "Room 004-HyVK6"
+              "roomName": "Room 005-Spl1W"
             }
           },
           "room": {
             "id": 446063,
-            "friendlyName": "Room 004-HyVK6"
+            "friendlyName": "Room 005-Spl1W"
           },
           "buttonPressedTs": 0,
           "capabilities": [],
@@ -628,9 +664,9 @@
           }
         },
         {
-          "id": "baseId001-PZw6N.elementId013-gZVMB",
+          "id": "baseId001-DkOTY.elementId014-Pn9f5",
           "type": "bs01.um01",
-          "friendlyName": "elementName013-GFIkn",
+          "friendlyName": "elementName014-8l5Vd",
           "firmwareStatus": "up_to_date",
           "firmwareVersion": "002800001025000001104510",
           "latestFirmwareVersion": "002800001025000001104510",
@@ -662,12 +698,12 @@
           },
           "frontendTags": {
             "room": {
-              "roomName": "Room 005-fVi4G"
+              "roomName": "Room 006-yOYP8"
             }
           },
           "room": {
             "id": 446063,
-            "friendlyName": "Room 005-fVi4G"
+            "friendlyName": "Room 006-yOYP8"
           },
           "buttonPressedTs": 1641845497233,
           "capabilities": [],
@@ -681,7 +717,7 @@
       ],
       "frontendTags": {
         "room": {
-          "roomName": "Room 004-HyVK6"
+          "roomName": "Room 005-Spl1W"
         }
       },
       "capabilities": [
@@ -695,7 +731,7 @@
       },
       "room": {
         "id": 446063,
-        "friendlyName": "Room 004-HyVK6"
+        "friendlyName": "Room 005-Spl1W"
       }
     }
   ],

@@ -34,9 +34,9 @@ export interface IBs01Item {
   timezone: string;
   pairingMode: boolean;
   subelements: ISubelementsItem[];
-  frontendTags?: IFrontendTags;
   capabilities: string[];
   states: IStates;
+  frontendTags?: IFrontendTags;
   room?: IRoom;
 }
 export interface ISubelementsItem {
@@ -47,6 +47,7 @@ export interface ISubelementsItem {
   firmwareVersion: string;
   latestFirmwareVersion: string;
   connectionStatus: string;
+  capabilities: any[];
   batteryStatus?: string;
   positionStatus?: string;
   calibrationStatus?: string;
@@ -56,8 +57,16 @@ export interface ISubelementsItem {
   frontendTags?: IFrontendTags;
   room?: IRoom;
   buttonPressedTs?: number;
-  capabilities: any[];
   debug?: IDebug;
+  testRequired?: boolean;
+  unmounted?: boolean;
+  smokeDetected?: boolean;
+  permanentBatteryLow?: boolean;
+  permanentBatteryChangeRequest?: boolean;
+  smokeChamberFail?: boolean;
+  smokeDetectorOff?: boolean;
+  lastAlarmTestTimestamp?: number;
+  lastPairingTimestamp?: number;
 }
 export interface IRuntimeConfiguration {
   umosConfiguredType: IUmosConfiguredType;

@@ -16,17 +16,18 @@ export interface IEventsItem {
   parents?: string[];
 }
 export interface IO {
+  reason?: string;
   frontendTags?: IFrontendTags;
+  friendly_name?: string;
+  id?: string;
+  type?: string;
+  room?: IRoom;
   dialable?: boolean;
   line_type?: string;
-  type?: string;
   line_index?: number;
   call_type?: string;
   clip_type?: string;
   clip?: string;
-  room?: IRoom;
-  friendly_name?: string;
-  id?: string;
   factoryType?: string;
   umosConfiguredType?: IUmosConfiguredType;
   basestationFriendlyName?: string;

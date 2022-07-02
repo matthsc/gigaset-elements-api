@@ -1,7 +1,7 @@
 [
   {
-    "id": "baseId000-wrfmS",
-    "friendly_name": "baseName000-lCU6N",
+    "id": "baseId000-XTKXp",
+    "friendly_name": "baseName000-eytOw",
     "status": "online",
     "firmware_status": "up_to_date",
     "updates_available": false,
@@ -29,7 +29,7 @@
                 }
               },
               {
-                "endnode_id": "elementId005-REbTD",
+                "endnode_id": "elementId005-X67KG",
                 "behaviors": {
                   "open": "ignore",
                   "prealert": "ignore",
@@ -48,7 +48,7 @@
                 }
               },
               {
-                "endnode_id": "elementId006-Ggs7r",
+                "endnode_id": "elementId006-gOxr0",
                 "behaviors": {
                   "open": "ignore",
                   "prealert": "ignore",
@@ -58,7 +58,7 @@
                 }
               },
               {
-                "endnode_id": "elementId002-UkCZA",
+                "endnode_id": "elementId002-4O6j2",
                 "behaviors": {
                   "open": "ignore",
                   "prealert": "ignore",
@@ -68,7 +68,7 @@
                 }
               },
               {
-                "endnode_id": "elementId003-FPIBZ",
+                "endnode_id": "elementId003-MOKQn",
                 "behaviors": {
                   "open": "ignore",
                   "prealert": "ignore",
@@ -78,7 +78,7 @@
                 }
               },
               {
-                "endnode_id": "elementId000-yIyYO",
+                "endnode_id": "elementId000-lcYZk",
                 "behaviors": {
                   "open": "ignore",
                   "prealert": "ignore",
@@ -142,7 +142,7 @@
                 }
               },
               {
-                "endnode_id": "elementId005-REbTD",
+                "endnode_id": "elementId005-X67KG",
                 "behaviors": {
                   "open": "alarm_notify",
                   "prealert": "alarm_notify",
@@ -161,7 +161,7 @@
                 }
               },
               {
-                "endnode_id": "elementId006-Ggs7r",
+                "endnode_id": "elementId006-gOxr0",
                 "behaviors": {
                   "open": "alarm_notify",
                   "prealert": "alarm_notify",
@@ -171,7 +171,7 @@
                 }
               },
               {
-                "endnode_id": "elementId002-UkCZA",
+                "endnode_id": "elementId002-4O6j2",
                 "behaviors": {
                   "open": "alarm_notify",
                   "prealert": "alarm_notify",
@@ -190,7 +190,7 @@
                 }
               },
               {
-                "endnode_id": "elementId003-FPIBZ",
+                "endnode_id": "elementId003-MOKQn",
                 "behaviors": {
                   "open": "alarm_notify",
                   "prealert": "alarm_notify",
@@ -200,7 +200,7 @@
                 }
               },
               {
-                "endnode_id": "elementId000-yIyYO",
+                "endnode_id": "elementId000-lcYZk",
                 "behaviors": {
                   "open": "alarm_notify",
                   "prealert": "alarm_notify",
@@ -258,9 +258,9 @@
     "timezone": "Europe/Zurich",
     "endnodes": [
       {
-        "id": "elementId000-yIyYO",
+        "id": "elementId000-lcYZk",
         "type": "um01",
-        "friendly_name": "elementName000-UIOro",
+        "friendly_name": "elementName000-ulXmA",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -272,18 +272,18 @@
         "position_status": "closed"
       },
       {
-        "id": "elementId001-mChqc",
+        "id": "elementId001-Bq3Dx",
         "type": "is01",
-        "friendly_name": "elementName001-YX793",
+        "friendly_name": "elementName001-fgFRL",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "0027000010250000000100080d",
         "latest_version": "00270000102500000001000801"
       },
       {
-        "id": "elementId002-UkCZA",
+        "id": "elementId002-4O6j2",
         "type": "um01",
-        "friendly_name": "elementName002-Tvzgw",
+        "friendly_name": "elementName002-a8ZBp",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -295,9 +295,9 @@
         "position_status": "closed"
       },
       {
-        "id": "elementId003-FPIBZ",
+        "id": "elementId003-MOKQn",
         "type": "um01",
-        "friendly_name": "elementName003-NSj3X",
+        "friendly_name": "elementName003-5Se55",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -309,9 +309,9 @@
         "position_status": "open"
       },
       {
-        "id": "elementId004-UACE5",
+        "id": "elementId004-W920a",
         "type": "wd01",
-        "friendly_name": "elementName004-YnOkY",
+        "friendly_name": "elementName004-ME246",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "0052000010250000",
@@ -322,9 +322,9 @@
         "ts_button": 0
       },
       {
-        "id": "elementId005-REbTD",
+        "id": "elementId005-X67KG",
         "type": "um01",
-        "friendly_name": "elementName005-qLbdB",
+        "friendly_name": "elementName005-5GdFi",
         "status": "offline",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -336,9 +336,9 @@
         "position_status": "unknown"
       },
       {
-        "id": "elementId006-Ggs7r",
+        "id": "elementId006-gOxr0",
         "type": "um01",
-        "friendly_name": "elementName006-KbqbH",
+        "friendly_name": "elementName006-gQs4l",
         "status": "offline",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -350,9 +350,9 @@
         "position_status": "unknown"
       },
       {
-        "id": "elementId007-cOD9W",
+        "id": "elementId007-50lzC",
         "type": "um01",
-        "friendly_name": "elementName007-rvhQO",
+        "friendly_name": "elementName007-WsWBW",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -364,9 +364,9 @@
         "position_status": "probably_closed"
       },
       {
-        "id": "elementId008-MAtPp",
+        "id": "elementId008-A6qHP",
         "type": "um01",
-        "friendly_name": "elementName008-0Bffm",
+        "friendly_name": "elementName008-hCRsX",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -378,9 +378,9 @@
         "position_status": "closed"
       },
       {
-        "id": "elementId009-XiW9V",
+        "id": "elementId009-UyOYG",
         "type": "um01",
-        "friendly_name": "elementName009-PSXSR",
+        "friendly_name": "elementName009-dwpj0",
         "status": "offline",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -390,13 +390,26 @@
         },
         "ts_button": 1611409153106,
         "position_status": "unknown"
+      },
+      {
+        "id": "elementId010-1Dlj5",
+        "type": "sd01",
+        "friendly_name": "elementName010-lbrEo",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "0013000010250000",
+        "latest_version": "0013000010250000",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 1656661747223
       }
     ],
     "sensors": [
       {
-        "id": "elementId000-yIyYO",
+        "id": "elementId000-lcYZk",
         "type": "um01",
-        "friendly_name": "elementName000-UIOro",
+        "friendly_name": "elementName000-ulXmA",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -408,18 +421,18 @@
         "position_status": "closed"
       },
       {
-        "id": "elementId001-mChqc",
+        "id": "elementId001-Bq3Dx",
         "type": "is01",
-        "friendly_name": "elementName001-YX793",
+        "friendly_name": "elementName001-fgFRL",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "0027000010250000000100080d",
         "latest_version": "00270000102500000001000801"
       },
       {
-        "id": "elementId002-UkCZA",
+        "id": "elementId002-4O6j2",
         "type": "um01",
-        "friendly_name": "elementName002-Tvzgw",
+        "friendly_name": "elementName002-a8ZBp",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -431,9 +444,9 @@
         "position_status": "closed"
       },
       {
-        "id": "elementId003-FPIBZ",
+        "id": "elementId003-MOKQn",
         "type": "um01",
-        "friendly_name": "elementName003-NSj3X",
+        "friendly_name": "elementName003-5Se55",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -445,9 +458,9 @@
         "position_status": "open"
       },
       {
-        "id": "elementId004-UACE5",
+        "id": "elementId004-W920a",
         "type": "wd01",
-        "friendly_name": "elementName004-YnOkY",
+        "friendly_name": "elementName004-ME246",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "0052000010250000",
@@ -458,9 +471,9 @@
         "ts_button": 0
       },
       {
-        "id": "elementId005-REbTD",
+        "id": "elementId005-X67KG",
         "type": "um01",
-        "friendly_name": "elementName005-qLbdB",
+        "friendly_name": "elementName005-5GdFi",
         "status": "offline",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -472,9 +485,9 @@
         "position_status": "unknown"
       },
       {
-        "id": "elementId006-Ggs7r",
+        "id": "elementId006-gOxr0",
         "type": "um01",
-        "friendly_name": "elementName006-KbqbH",
+        "friendly_name": "elementName006-gQs4l",
         "status": "offline",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -486,9 +499,9 @@
         "position_status": "unknown"
       },
       {
-        "id": "elementId007-cOD9W",
+        "id": "elementId007-50lzC",
         "type": "um01",
-        "friendly_name": "elementName007-rvhQO",
+        "friendly_name": "elementName007-WsWBW",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -500,9 +513,9 @@
         "position_status": "probably_closed"
       },
       {
-        "id": "elementId008-MAtPp",
+        "id": "elementId008-A6qHP",
         "type": "um01",
-        "friendly_name": "elementName008-0Bffm",
+        "friendly_name": "elementName008-hCRsX",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -514,9 +527,9 @@
         "position_status": "closed"
       },
       {
-        "id": "elementId009-XiW9V",
+        "id": "elementId009-UyOYG",
         "type": "um01",
-        "friendly_name": "elementName009-PSXSR",
+        "friendly_name": "elementName009-dwpj0",
         "status": "offline",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -526,12 +539,25 @@
         },
         "ts_button": 1611409153106,
         "position_status": "unknown"
+      },
+      {
+        "id": "elementId010-1Dlj5",
+        "type": "sd01",
+        "friendly_name": "elementName010-lbrEo",
+        "status": "online",
+        "firmware_status": "up_to_date",
+        "fw_version": "0013000010250000",
+        "latest_version": "0013000010250000",
+        "battery": {
+          "state": "ok"
+        },
+        "ts_button": 1656661747223
       }
     ]
   },
   {
-    "id": "baseId001-PZw6N",
-    "friendly_name": "baseName001-3QAla",
+    "id": "baseId001-DkOTY",
+    "friendly_name": "baseName001-L6kVP",
     "status": "online",
     "firmware_status": "up_to_date",
     "updates_available": false,
@@ -550,7 +576,7 @@
             "privacy_mode": false,
             "settings": [
               {
-                "endnode_id": "elementId012-pcmHS",
+                "endnode_id": "elementId013-Y9MA0",
                 "behaviors": {
                   "open": "ignore",
                   "prealert": "ignore",
@@ -569,7 +595,7 @@
             "privacy_mode": false,
             "settings": [
               {
-                "endnode_id": "elementId012-pcmHS",
+                "endnode_id": "elementId013-Y9MA0",
                 "behaviors": {
                   "open": "alarm_notify",
                   "prealert": "alarm_notify",
@@ -599,9 +625,9 @@
     },
     "endnodes": [
       {
-        "id": "elementId010-LKKBr",
+        "id": "elementId011-ugP4t",
         "type": "wd01",
-        "friendly_name": "elementName010-CM1wj",
+        "friendly_name": "elementName011-EGssU",
         "status": "offline",
         "firmware_status": "up_to_date",
         "fw_version": "0052000010250000",
@@ -612,9 +638,9 @@
         "ts_button": 0
       },
       {
-        "id": "elementId011-rWMtL",
+        "id": "elementId012-3ISDr",
         "type": "wd01",
-        "friendly_name": "elementName011-wczEH",
+        "friendly_name": "elementName012-Fzt4r",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "0052000010250000",
@@ -625,9 +651,9 @@
         "ts_button": 1632422907219
       },
       {
-        "id": "elementId012-pcmHS",
+        "id": "elementId013-Y9MA0",
         "type": "um01",
-        "friendly_name": "elementName012-x4pK4",
+        "friendly_name": "elementName013-K7XTC",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -639,9 +665,9 @@
         "position_status": "closed"
       },
       {
-        "id": "elementId013-gZVMB",
+        "id": "elementId014-Pn9f5",
         "type": "um01",
-        "friendly_name": "elementName013-GFIkn",
+        "friendly_name": "elementName014-8l5Vd",
         "status": "offline",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -655,9 +681,9 @@
     ],
     "sensors": [
       {
-        "id": "elementId010-LKKBr",
+        "id": "elementId011-ugP4t",
         "type": "wd01",
-        "friendly_name": "elementName010-CM1wj",
+        "friendly_name": "elementName011-EGssU",
         "status": "offline",
         "firmware_status": "up_to_date",
         "fw_version": "0052000010250000",
@@ -668,9 +694,9 @@
         "ts_button": 0
       },
       {
-        "id": "elementId011-rWMtL",
+        "id": "elementId012-3ISDr",
         "type": "wd01",
-        "friendly_name": "elementName011-wczEH",
+        "friendly_name": "elementName012-Fzt4r",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "0052000010250000",
@@ -681,9 +707,9 @@
         "ts_button": 1632422907219
       },
       {
-        "id": "elementId012-pcmHS",
+        "id": "elementId013-Y9MA0",
         "type": "um01",
-        "friendly_name": "elementName012-x4pK4",
+        "friendly_name": "elementName013-K7XTC",
         "status": "online",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
@@ -695,9 +721,9 @@
         "position_status": "closed"
       },
       {
-        "id": "elementId013-gZVMB",
+        "id": "elementId014-Pn9f5",
         "type": "um01",
-        "friendly_name": "elementName013-GFIkn",
+        "friendly_name": "elementName014-8l5Vd",
         "status": "offline",
         "firmware_status": "up_to_date",
         "fw_version": "002800001025000001104510",
