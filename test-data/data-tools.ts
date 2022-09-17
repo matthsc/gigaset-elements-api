@@ -275,7 +275,7 @@ export function reduceTestData(
   const elementIdRemapping = new Map<string, ISubelementsItem>();
   const gp02IdRemapping = new Map<string, IGp02Item>();
   const getElementKey = (item: ISubelementsItem): string =>
-    `${item.type}-${item.states?.factoryType}-${item.batteryStatus}-${item.calibrationStatus}-${item.connectionStatus}`;
+    `${item.type}-${item.states?.factoryType}-${item.batteryStatus}-${item.calibrationStatus}-${item.connectionStatus}-${item.positionStatus}-${item.firmwareStatus}-${item.smokeChamberFail}-${item.permanentBatteryChangeRequest}-${item.permanentBatteryLow}-${item.smokeChamberFail}-${item.smokeDetected}-${item.smokeDetectorOff}-${item.testRequired}`;
   const getGp02Key = (item: IGp02Item): string => `${item.connectionStatus}`;
   const getEventKey = (item: IEventsItem): string =>
     `${item.type}-${item.o?.type}-${item.o?.factoryType}-${item.o?.call_type}-${item.o?.clip_type}-${item.o?.dialable}-${item.o?.line_type}`;
