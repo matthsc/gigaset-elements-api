@@ -71,7 +71,7 @@
     "dotenv": "^16.0.3",
     "dotenv-cli": "^7.0.0",
     "eslint": "^8.35.0",
-    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "json-ts": "^1.6.4",
     "mocha": "^10.2.0",
