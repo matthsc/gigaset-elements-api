@@ -6,7 +6,7 @@ Library to access Gigaset Elements API.
 [![npm](https://img.shields.io/npm/v/gigaset-elements-api)](https://www.npmjs.com/package/gigaset-elements-api)
 [![license](https://img.shields.io/npm/l/gigaset-elements-api)](LICENSE)
 
-![build](https://img.shields.io/github/workflow/status/matthsc/gigaset-elements-api/Node.js%20CI)
+![build](https://img.shields.io/github/actions/workflow/status/matthsc/gigaset-elements-api/build-and-test.yml?branch=main)
 [![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability-percentage/matthsc/gigaset-elements-api)
 ![Code Climate issues](https://img.shields.io/codeclimate/issues/matthsc/gigaset-elements-api)
 ![Code Climate technical debt](https://img.shields.io/codeclimate/tech-debt/matthsc/gigaset-elements-api)
