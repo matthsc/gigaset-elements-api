@@ -29,7 +29,7 @@ const generateDefinition = async (
   // ignore eslint rules
   definitions = "/* eslint-disable */\n" + definitions;
   // use prettier to format definitions
-  const output = prettier.format(definitions, { parser: "typescript" });
+  const output = await prettier.format(definitions, { parser: "typescript" });
   // write file
   return writeFile(`./src/model/gigaset-${fileName}.ts`, output, {
     encoding: "utf-8",
