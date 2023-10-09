@@ -65,6 +65,10 @@ jspm_packages/
 .yarn/install-state.gz
 .pnp.*
 
+# test file
+test.ts
+test-data/test.ts
+
 # generated output
 dist
 test-data/load-and-merge.json

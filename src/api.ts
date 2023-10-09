@@ -191,4 +191,19 @@ export class GigasetElementsApi extends RequestBase {
 
     return allEvents;
   }
+
+  /**
+   * Sends a command
+   * @param baseStationId id of the base station
+   * @param endNodeId id of the end node
+   * @param name name of the command, i.e. "on" or "off" for plugs
+   */
+  @Authorize
+  public async sendCommand(
+    baseStationId: string,
+    endNodeId: string,
+    name: string,
+  ): Promise<void> {
+    await this.post(url.cmd(baseStationId, endNodeId), { body: { name } });
+  }
 }

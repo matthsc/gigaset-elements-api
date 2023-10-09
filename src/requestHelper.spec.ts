@@ -3,6 +3,10 @@ import { RequestBase, url, urlParams } from "./requestHelper";
 import { assert } from "chai";
 import nock = require("nock");
 
+interface RequestHelperUrlObject {
+  [key: string]: string | (() => void);
+}
+
 describe("request helper url objects", () => {
   describe("- url", () => {
     it("exists", () => {
@@ -13,8 +17,8 @@ describe("request helper url objects", () => {
     for (const prop of ["basestations", "status", "login", "auth", "events"]) {
       it("contains url for " + prop, () => {
         assert.property(url, prop);
-        assert.exists((url as { [key: string]: string })[prop]);
-        assert.isNotEmpty((url as { [key: string]: string })[prop]);
+        assert.exists((url as unknown as RequestHelperUrlObject)[prop]);
+        assert.isNotEmpty((url as unknown as RequestHelperUrlObject)[prop]);
       });
     }
 
@@ -26,17 +30,19 @@ describe("request helper url objects", () => {
       const doesNotExistProp = "doesNotExist";
       const test = "test123";
       try {
-        (url as { [key: string]: string })[doesNotExistProp] = test;
+        (url as unknown as RequestHelperUrlObject)[doesNotExistProp] = test;
         assert.fail();
       } catch {
         // this is expected, nothing to do
       }
-      assert.notExists((url as { [key: string]: string })[doesNotExistProp]);
+      assert.notExists(
+        (url as unknown as RequestHelperUrlObject)[doesNotExistProp],
+      );
 
       const existProp = "auth";
       const before = url.auth;
       try {
-        (url as { [key: string]: string })[existProp] = test;
+        (url as unknown as RequestHelperUrlObject)[existProp] = test;
         assert.fail();
       } catch {
         // this is expected, nothing to do
@@ -117,6 +123,8 @@ describe("requestBase.get", () => {
       assert.equal((err as Error).message, JSON.stringify(body));
     }
   });
+
+  // TODO: check that cookie from authorization is included in get request
 });
 
 describe("requestBase.post", () => {
@@ -188,6 +196,8 @@ describe("requestBase.post", () => {
       assert.equal((err as Error).message, JSON.stringify(body));
     }
   });
+
+  // TODO: check that cookie from authorization is included in post request
 });
 
 describe("requestBase request logging", () => {

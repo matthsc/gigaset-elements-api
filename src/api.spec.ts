@@ -571,3 +571,31 @@ describe("api.getAllEvents", () => {
     ensureSortedEvents(events);
   });
 });
+
+describe("api.sendCommand", () => {
+  const api = new GigasetElementsApi({ email: "", password: "" });
+  const baseId = "baseId20";
+  const endNodeId = "endNodeId3";
+
+  function createScope() {
+    const [domain, pathAndQuery] = splitDomainAndPath(
+      url.cmd(baseId, endNodeId),
+    );
+    const [path, query] = splitPathAndQuery(pathAndQuery);
+    const params = new URLSearchParams(query);
+
+    return postInterceptor(domain + path, { name: "test" })
+      .query(params)
+      .reply(200);
+  }
+
+  afterEach(() => {
+    nock.cleanAll();
+  });
+
+  it("sends a command", async () => {
+    const scope = createScope();
+    await api.sendCommand(baseId, endNodeId, "test");
+    assert.isTrue(scope.isDone());
+  });
+});

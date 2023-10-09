@@ -4,7 +4,9 @@ import { loadBaseStations, loadElements, loadEvents } from ".";
 import { GigasetElementsApi } from "../src";
 
 /** helper method for creating the API instance */
-export async function createApi() {
+export async function createApi(
+  requestLogger?: GigasetElementsApi["requestLogger"],
+) {
   // init
   const email = process.env.GE_EMAIL as string;
   const password = process.env.GE_PASS as string;
@@ -17,6 +19,7 @@ export async function createApi() {
   const api = new GigasetElementsApi({
     email: process.env.GE_EMAIL as string,
     password: process.env.GE_PASS as string,
+    requestLogger,
   });
   await api.authorize();
   return api;

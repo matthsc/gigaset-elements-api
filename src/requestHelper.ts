@@ -10,6 +10,8 @@ export const url = Object.freeze({
   basestations: "https://api.gigaset-elements.de/api/v1/me/basestations",
   elements: "https://api.gigaset-elements.de/api/v2/me/elements",
   events: "https://api.gigaset-elements.de/api/v2/me/events",
+  cmd: (baseStationId: string, endNodeId: string) =>
+    `https://api.gigaset-elements.de/api/v1/me/basestations/${baseStationId}/endnodes/${endNodeId}/cmd`,
 });
 
 /** GE api url query parameter */
@@ -102,16 +104,20 @@ export class RequestBase {
   /**
    * Helper function to perform POST requests
    * @param uri uri to request
-   * @param bodyOrForm request body or form data
+   * @param options request options
    */
   public async post<T = unknown>(
     uri: string,
-    bodyOrForm: { body?: unknown; form?: string | object } = {},
+    options: requestPromise.RequestPromiseOptions = {},
   ) {
     // sanitize body - if it is an object, stringify it
-    if (bodyOrForm.body && typeof bodyOrForm.body !== "string")
-      bodyOrForm.body = JSON.stringify(bodyOrForm.body);
+    if (options.body && typeof options.body !== "string") {
+      options.body = JSON.stringify(options.body);
+      options.headers = {
+        "content-type": "application/json; charset=UTF-8",
+      };
+    }
 
-    return this.makeRequest<T>("post", uri, bodyOrForm);
+    return this.makeRequest<T>("post", uri, options);
   }
 }
