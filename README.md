@@ -98,6 +98,14 @@ Utility method to retrieves all events that occured during a time period, using 
 api.getAllEvents(from: Date | number, to?: Date | number, batchSize = 500): Promise<IEventsItem[]>
 ```
 
+### sendCommand
+
+Sends a command for an endNode, i.e. "on" or "off" for plugs. Throws if the command is invalid (HTTP 400), i.e. when sending "off" to a plug that is already turned off.
+
+```ts
+api.sendCommand(baseStationId: string, endNodeId: string, commandName: string): Promise<void>;
+```
+
 ### authorize
 
 Authorize against the GE cloud. Retrieves and stores authorization cookie for further api requests. Usually this is done automatically by methods that need authorization like <code>getRecentEvents</code> and doesn't neet to be called manually.
@@ -153,4 +161,8 @@ See also [Test Data](test-data/README.md)
 
 # Acknowledgements
 
-This library would not be possible without the awsome work of https://github.com/ycardon/gigaset-elements-proxy
+This library would not be possible without the awsome work of https://github.com/ycardon/gigaset-elements-proxy.
+
+Hardware sponsors:
+
+- [Voggl93](https://github.com/Voggl93) (Plug v1)
