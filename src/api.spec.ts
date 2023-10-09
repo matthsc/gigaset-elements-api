@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import * as sinon from "sinon";
 import { IEventRoot, IEventsItem } from "./model";
 import { assert, use as chaiUse } from "chai";
 import { url, urlParams } from "./requestHelper";
 import { GigasetElementsApi } from "./api";
 import chaiAsPromised from "chai-as-promised";
-import nock = require("nock");
-import sinon = require("sinon");
 import { loadEvents } from "../test-data/data-loader";
+import nock from "nock";
 
 chaiUse(chaiAsPromised);
 

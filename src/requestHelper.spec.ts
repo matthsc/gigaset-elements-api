@@ -1,7 +1,7 @@
 import { EndpointError, NetworkError } from "./errors";
 import { RequestBase, url, urlParams } from "./requestHelper";
 import { assert } from "chai";
-import nock = require("nock");
+import nock from "nock";
 
 interface RequestHelperUrlObject {
   [key: string]: string | (() => void);
