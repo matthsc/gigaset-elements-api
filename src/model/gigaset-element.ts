@@ -71,6 +71,9 @@ export interface ISubelementsItem {
 export interface IRuntimeConfiguration {
   umosConfiguredType: IUmosConfiguredType;
   params: IParams;
+  relayState?: string;
+  startTimestampInSeconds?: number;
+  durationInSeconds?: number;
 }
 export interface IUmosConfiguredType {
   mainType: string;
@@ -90,6 +93,7 @@ export interface IStates {
   waterAlarm?: string;
   testRequired?: boolean;
   lastAlarmTestTimestamp?: number;
+  relay?: string;
   "dect.remaining_devices_to_be_paired"?: number;
   "dect.remaining_devices_to_be_paired._meta"?: {
     modificationTimestamp: number;

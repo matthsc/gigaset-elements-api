@@ -3,4 +3,4 @@ export * from "./gigaset-element";
 export * from "./gigaset-event";
 
 // re-export duplicates manually
-export { IRoom, IFrontendTags, IUmosConfiguredType } from "./gigaset-event";
+export { IRoom, IFrontendTags, IUmosConfiguredType, IO } from "./gigaset-event";

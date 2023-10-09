@@ -38,10 +38,10 @@ export interface ISettingsItem {
 }
 export interface IBehaviors {
   open: string;
-  drilling: string;
-  forcedentry: string;
   prealert: string;
   tilt: string;
+  drilling: string;
+  forcedentry: string;
 }
 export interface INight {
   sirens_on: boolean;
@@ -70,9 +70,19 @@ export interface IEndnodesItem {
   battery?: IBattery;
   ts_button?: number;
   position_status?: string;
+  o?: IO;
 }
 export interface IBattery {
   state: string;
+}
+export interface IO {
+  relay: string;
+  configuration: IConfiguration;
+}
+export interface IConfiguration {
+  relayState: string;
+  startTimestampInSeconds: number;
+  durationInSeconds: number;
 }
 export interface ISensorsItem {
   id: string;
@@ -85,4 +95,5 @@ export interface ISensorsItem {
   battery?: IBattery;
   ts_button?: number;
   position_status?: string;
+  o?: IO;
 }
