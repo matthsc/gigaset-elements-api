@@ -58,9 +58,17 @@ Check whether GE cloud is in maintenance mode and currently not available
 api.isMaintenance(): Promise<boolean>
 ```
 
+### getSystemHealth
+
+Retrive system health data.
+
+```ts
+api.getSystemHealth(): Promise<IGigasetElementsSystemHealth>
+```
+
 ### getBaseStations
 
-Retrieve base station and sensor data. Automatically handles authorization if required.
+Retrieves base station and sensor data. Automatically handles authorization if required.
 
 ```ts
 api.getBaseStations(): Promise<IBaseStationRoot>;
@@ -104,6 +112,22 @@ Sends a command for an endNode, i.e. "on" or "off" for plugs. Throws if the comm
 
 ```ts
 api.sendCommand(baseStationId: string, endNodeId: string, commandName: string): Promise<void>;
+```
+
+### setUserAlarm
+
+Turn user alarm (panic button) on or off,
+
+```ts
+api.setUserAlarm(on: boolean): Promise<void>;
+```
+
+### setAlarmMode
+
+Updates the active alarm mode.
+
+```ts
+setAlarmMode(baseStationId: string, mode: "away" | "home" | "night" | "custom"): Promise<void>
 ```
 
 ### authorize
@@ -161,7 +185,7 @@ See also [Test Data](test-data/README.md)
 
 # Acknowledgements
 
-This library would not be possible without the awsome work of https://github.com/ycardon/gigaset-elements-proxy.
+This library would not be possible without the awsome work of https://github.com/ycardon/gigaset-elements-proxy and https://github.com/dynasticorpheus/gigasetelements-ha.
 
 Hardware sponsors:
 

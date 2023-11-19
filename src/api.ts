@@ -3,6 +3,7 @@ import type {
   IElementRoot,
   IEventRoot,
   IEventsItem,
+  IGigasetElementsSystemHealth,
 } from "./model";
 import { RequestBase, url, urlParams } from "./requestHelper";
 import { EndpointError } from "./errors";
@@ -99,7 +100,16 @@ export class GigasetElementsApi extends RequestBase {
   }
 
   /**
-   * Retrieve base station and sensor data.
+   * Retrive system health data.
+   * Automatically handles authorization if required.
+   */
+  @Authorize
+  public getSystemHealth(): Promise<IGigasetElementsSystemHealth> {
+    return this.get<IGigasetElementsSystemHealth>(url.health);
+  }
+
+  /**
+   * Retrieves base station and sensor data.
    * Automatically handles authorization if required.
    */
   @Authorize
@@ -205,5 +215,33 @@ export class GigasetElementsApi extends RequestBase {
     name: string,
   ): Promise<void> {
     await this.post(url.cmd(baseStationId, endNodeId), { body: { name } });
+  }
+
+  /**
+   * Turn user alarm (panic button) on or off
+   * @param on whether to turn the alarm on or off
+   */
+  @Authorize
+  public async setUserAlarm(on: boolean): Promise<void> {
+    if (on)
+      await this.post(url.webFrontendSink, {
+        body: { action: "alarm.user.start" },
+      });
+    else await this.delete(url.userAlarm);
+  }
+
+  /**
+   *Updates the active alarm mode.
+   * @param baseStationId id of the base station
+   * @param mode alarm mode to set
+   */
+  @Authorize
+  public async setAlarmMode(
+    baseStationId: string,
+    mode: "away" | "home" | "night" | "custom",
+  ): Promise<void> {
+    await this.post(url.basestations + "/" + baseStationId, {
+      body: { intrusion_settings: { active_mode: mode } },
+    });
   }
 }

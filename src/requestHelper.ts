@@ -2,16 +2,20 @@ import * as requestNonPromise from "request";
 import * as requestPromise from "request-promise-native";
 import { EndpointError, NetworkError } from "./errors";
 
+const apiBase = "https://api.gigaset-elements.de/api";
 /** GE api urls */
 export const url = Object.freeze({
   status: "https://status.gigaset-elements.de/api/v1/status",
   login: "https://im.gigaset-elements.de/identity/api/v1/user/login",
-  auth: "https://api.gigaset-elements.de/api/v1/auth/openid/begin?op=gigaset",
-  basestations: "https://api.gigaset-elements.de/api/v1/me/basestations",
-  elements: "https://api.gigaset-elements.de/api/v2/me/elements",
-  events: "https://api.gigaset-elements.de/api/v2/me/events",
+  auth: `${apiBase}/v1/auth/openid/begin?op=gigaset`,
+  webFrontendSink: `${apiBase}/v1/me/devices/webfrontend/sink`,
+  userAlarm: `${apiBase}/v1/me/states/userAlarm`,
+  basestations: `${apiBase}/v1/me/basestations`,
+  elements: `${apiBase}/v2/me/elements`,
+  events: `${apiBase}/v2/me/events`,
+  health: `${apiBase}/v3/me/health`,
   cmd: (baseStationId: string, endNodeId: string) =>
-    `https://api.gigaset-elements.de/api/v1/me/basestations/${baseStationId}/endnodes/${endNodeId}/cmd`,
+    `${apiBase}/v1/me/basestations/${baseStationId}/endnodes/${endNodeId}/cmd`,
 });
 
 /** GE api url query parameter */
@@ -69,7 +73,7 @@ export class RequestBase {
    * @param options request options
    */
   private async makeRequest<T>(
-    method: "get" | "post",
+    method: "get" | "post" | "delete",
     uri: string,
     options?: requestPromise.RequestPromiseOptions,
   ) {
@@ -83,7 +87,7 @@ export class RequestBase {
 
     const body: T = response.body ? JSON.parse(response.body) : undefined;
     this.requestLogger(response.statusCode.toString(), response.body);
-    if (response.statusCode !== 200)
+    if (response.statusCode < 200 && response.statusCode >= 300)
       throw new EndpointError(
         response.statusCode,
         method.toUpperCase(),
@@ -119,5 +123,12 @@ export class RequestBase {
     }
 
     return this.makeRequest<T>("post", uri, options);
+  }
+
+  public async delete<T = unknown>(
+    uri: string,
+    options?: requestPromise.RequestPromiseOptions,
+  ) {
+    return this.makeRequest<T>("delete", uri, options);
   }
 }
