@@ -87,7 +87,8 @@ export class RequestBase {
 
     const body: T = response.body ? JSON.parse(response.body) : undefined;
     this.requestLogger(response.statusCode.toString(), response.body);
-    if (response.statusCode < 200 && response.statusCode >= 300)
+
+    if (response.statusCode < 200 || response.statusCode >= 300)
       throw new EndpointError(
         response.statusCode,
         method.toUpperCase(),
