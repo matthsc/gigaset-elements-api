@@ -16,6 +16,8 @@ export const url = Object.freeze({
   health: `${apiBase}/v3/me/health`,
   cmd: (baseStationId: string, endNodeId: string) =>
     `${apiBase}/v1/me/basestations/${baseStationId}/endnodes/${endNodeId}/cmd`,
+  thermostat: (baseStationId: string, endNodeId: string) =>
+    `${apiBase}/v2/me/elements/bs01.ts01/${baseStationId}.${endNodeId}/runtime-configuration`,
 });
 
 /** GE api url query parameter */
@@ -73,7 +75,7 @@ export class RequestBase {
    * @param options request options
    */
   private async makeRequest<T>(
-    method: "get" | "post" | "delete",
+    method: "get" | "post" | "put" | "delete",
     uri: string,
     options?: requestPromise.RequestPromiseOptions,
   ) {
@@ -126,6 +128,23 @@ export class RequestBase {
     return this.makeRequest<T>("post", uri, options);
   }
 
+  /**
+   * Helper function to perform PUT requests
+   * @param uri uri to request
+   * @param options request options
+   */
+  public async put<T = unknown>(
+    uri: string,
+    options?: requestPromise.RequestPromiseOptions,
+  ) {
+    return this.makeRequest<T>("put", uri, options);
+  }
+
+  /**
+   * Helper function to perform DELETE requests
+   * @param uri uri to request
+   * @param options request options
+   */
   public async delete<T = unknown>(
     uri: string,
     options?: requestPromise.RequestPromiseOptions,

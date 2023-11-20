@@ -114,6 +114,14 @@ Sends a command for an endNode, i.e. "on" or "off" for plugs. Throws if the comm
 api.sendCommand(baseStationId: string, endNodeId: string, commandName: string): Promise<void>;
 ```
 
+### setThermostat
+
+Sets the setPoint for a thermostat. !completely untested due to lack of hardware!
+
+```ts
+api.setThermostat(baseStationId: string, endNodeId: string, setPoint: number): Promise<void>;
+```
+
 ### setUserAlarm
 
 Turn user alarm (panic button) on or off,

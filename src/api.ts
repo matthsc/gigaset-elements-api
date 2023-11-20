@@ -218,6 +218,22 @@ export class GigasetElementsApi extends RequestBase {
   }
 
   /**
+   * Update the thermostat set point
+   * @param baseStationId id of the base station
+   * @param mode alarm mode to set
+   */
+  @Authorize
+  public async setThermostat(
+    baseStationId: string,
+    endNodeId: string,
+    setPoint: number,
+  ): Promise<void> {
+    await this.put(url.thermostat(baseStationId, endNodeId), {
+      body: { setPoint },
+    });
+  }
+
+  /**
    * Turn user alarm (panic button) on or off
    * @param on whether to turn the alarm on or off
    */
@@ -231,7 +247,7 @@ export class GigasetElementsApi extends RequestBase {
   }
 
   /**
-   *Updates the active alarm mode.
+   * Updates the active alarm mode.
    * @param baseStationId id of the base station
    * @param mode alarm mode to set
    */
