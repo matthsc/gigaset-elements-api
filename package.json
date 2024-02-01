@@ -70,7 +70,7 @@
     "chai": "^4.3.10",
     "chai-as-promised": "^7.1.1",
     "cpy-cli": "^5.0.0",
-    "dotenv": "^16.3.1",
+    "dotenv": "^16.4.1",
     "dotenv-cli": "^7.3.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
